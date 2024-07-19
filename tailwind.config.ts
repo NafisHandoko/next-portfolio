@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        mineshaft: "#252525",
+        nero: "#FFFFFF",
+        silver: "#BFBFBF",
+        jumbo: "#888889",
+        codgray: "#141414"
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
