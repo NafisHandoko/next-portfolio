@@ -3,8 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BsPhone } from "react-icons/bs";
-import { FaGithub, FaLaptopCode, FaLaravel, FaWordpress } from "react-icons/fa6";
-import { GoLinkExternal } from "react-icons/go";
+import { FaDribbble, FaGithub, FaInstagram, FaLaptopCode, FaLaravel, FaLinkedin, FaRegEnvelope, FaWordpress } from "react-icons/fa6";
+import { GoArrowUp, GoLinkExternal } from "react-icons/go";
 import { MdOutlinePalette } from "react-icons/md";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiNextdotjs } from "react-icons/si";
@@ -13,7 +13,25 @@ import { ReactTyped } from "react-typed";
 export default function Home() {
     return (
         <>
-            <header className="bg-mineshaft text-nero">
+            <a href="#header" className="fixed bottom-[5%] right-[5%] text-nero w-10 h-10 hidden md:flex items-center justify-center rounded-full border border-white cursor-pointer hover:bg-nero hover:text-codgray transition-all">
+                <GoArrowUp />
+            </a>
+            <div className="fixed top-[30%] left-[6%] hidden md:flex flex-col items-center gap-1">
+                <div className="h-[35vh] border-r border-white"></div>
+                <div className="rounded-full p-1 bg-white"></div>
+                <div className="h-[2vh] border-r border-white"></div>
+                <div className="rounded-full p-1 bg-white"></div>
+                <div className="h-[5vh] border-r border-white"></div>
+            </div>
+            <div
+                className="hidden md:flex flex-col items-center justify-between py-10 fixed top-[30%] right-[6%] text-white h-[50vh]">
+                <a className="glow transition-all" target="_blank" href="https://github.com/nafishandoko"><FaGithub size={"17px"} /></a>
+                <a className="glow transition-all" target="_blank" href="https://www.linkedin.com/in/nafishandoko"><FaLinkedin size={"17px"} /></a>
+                <a className="glow transition-all" target="_blank" href="https://instagram.com/nafishandoko"><FaInstagram size={"17px"} /></a>
+                <a className="glow transition-all" target="_blank" href="mailto:naffisioner@gmail.com"><FaRegEnvelope size={"17px"} /></a>
+                <a className="glow transition-all" target="_blank" href="https://dribbble.com/nafishandoko"><FaDribbble size={"17px"} /></a>
+            </div>
+            <header id="header" className="bg-mineshaft text-nero">
                 <div className="min-h-screen container mx-auto w-full flex flex-col items-center justify-center gap-y-2 text-center px-10 md:px-0">
                     <h1 className="font-bold text-4xl">
                         Hi i am&nbsp;

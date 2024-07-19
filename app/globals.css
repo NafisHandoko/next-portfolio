@@ -27,6 +27,16 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
+.glow:hover {
+  /* text-shadow: 0 0 50px white; */
+  text-shadow:
+    0 0 30px white,
+    0 0 30px white,
+    0 0 30px white,
+    0 0 30px white;
+  filter: dropshadow(color=white, offx=2, offy=2);
+}
+
 /* @layer utilities {
   .text-balance {
     text-wrap: balance;
