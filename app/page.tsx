@@ -47,12 +47,14 @@ export default function Home() {
                 <ul className='container mx-auto flex flex-col items-center justify-between gap-7'>
                     <li className='text-xl font-medium'><a href="#">Home</a></li>
                     <li className='text-xl font-medium'><a href="#about">About</a></li>
+                    <li className='text-xl font-medium'><a href="#experiences">Experiences</a></li>
                     <li className='text-xl font-medium'><a href="#services">Services</a></li>
-                    <li className='text-xl font-medium'><a href="#skills">Skills</a></li>
-                    <li className='text-xl font-medium'><a href="#works">Works</a></li>
-                    <li className='text-xl font-medium'>
+                    <li className='text-xl font-medium'><a href="#projects">Projects</a></li>
+                    <li className='text-xl font-medium'><a href="#articles">Articles</a></li>
+                    <li className='text-xl font-medium'><a href="#contact">Contact</a></li>
+                    {/* <li className='text-xl font-medium'>
                         <Link href="/articles">Articles</Link>
-                    </li>
+                    </li> */}
                 </ul>
             </nav >
             <nav
