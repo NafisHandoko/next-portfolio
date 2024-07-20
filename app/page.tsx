@@ -102,7 +102,7 @@ export default function Home() {
                     </h1>
                     <a
                         href="#"
-                        target="_blank"
+                        // target="_blank"
                         className="text-nero border border-nero hover:bg-nero hover:text-codgray transition-all rounded-md px-8 py-4 self-center"
                     >
                         Download my resume
