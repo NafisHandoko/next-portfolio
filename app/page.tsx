@@ -2,15 +2,23 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { BsPhone } from "react-icons/bs";
+import { useState } from "react";
+import { BsListNested, BsPhone } from "react-icons/bs";
 import { FaDribbble, FaGithub, FaInstagram, FaLaptopCode, FaLaravel, FaLinkedin, FaRegEnvelope, FaWordpress } from "react-icons/fa6";
 import { GoArrowUp, GoLinkExternal } from "react-icons/go";
 import { MdOutlinePalette } from "react-icons/md";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiNextdotjs } from "react-icons/si";
 import { ReactTyped } from "react-typed";
+import { useWindowOnEvent } from "./_hooks/useWindowOnEvent";
 
 export default function Home() {
+    const [isScrolled, setIsScrolled] = useState<boolean>(false);
+
+    useWindowOnEvent("scroll", (): void => {
+        window.scrollY > 50 ? setIsScrolled(true) : setIsScrolled(false);
+    });
+
     return (
         <>
             <a href="#header" className="fixed bottom-[5%] right-[5%] text-nero w-10 h-10 hidden md:flex items-center justify-center rounded-full border border-white cursor-pointer hover:bg-nero hover:text-codgray transition-all">
@@ -31,6 +39,29 @@ export default function Home() {
                 <a className="glow transition-all" target="_blank" href="mailto:naffisioner@gmail.com"><FaRegEnvelope size={"17px"} /></a>
                 <a className="glow transition-all" target="_blank" href="https://dribbble.com/nafishandoko"><FaDribbble size={"17px"} /></a>
             </div>
+            <nav
+                className={`fixed left-0 right-0 z-10 container mx-auto flex flex-col md:flex-row items-center md:justify-center w-full px-7 md:px-28 transition-all ${isScrolled ? 'glass py-6' : 'bg-mineshaft py-10'}`}>
+                <button className='text-3xl block md:hidden self-end'><BsListNested /></button>
+                <ul className='hidden md:flex flex-row gap-x-7 items-center text-nero font-light'>
+                    <li className="border border-transparent hover:border-b-white transition-all"><a className="glow transition-all"
+                        href="#">Home</a></li>
+                    <li className="border border-transparent hover:border-b-white transition-all"><a className="glow transition-all"
+                        href="#about">About</a>
+                    </li>
+                    <li className="border border-transparent hover:border-b-white transition-all"><a className="glow transition-all"
+                        href="#services">Services</a>
+                    </li>
+                    <li className="border border-transparent hover:border-b-white transition-all"><a className="glow transition-all"
+                        href="#skills">Skills</a>
+                    </li>
+                    <li className="border border-transparent hover:border-b-white transition-all"><a className="glow transition-all"
+                        href="#works">Works</a>
+                    </li>
+                    <li className="border border-transparent hover:border-b-white transition-all">
+                        <Link className="glow transition-all" href="/articles">Articles</Link>
+                    </li>
+                </ul>
+            </nav >
             <header id="header" className="bg-mineshaft text-nero">
                 <div className="min-h-screen container mx-auto w-full flex flex-col items-center justify-center gap-y-2 text-center px-10 md:px-0">
                     <h1 className="font-bold text-4xl">
