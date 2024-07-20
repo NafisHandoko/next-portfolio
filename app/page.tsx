@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BsListNested, BsPhone } from "react-icons/bs";
 import { FaDribbble, FaFigma, FaGithub, FaInstagram, FaLaptopCode, FaLaravel, FaLinkedin, FaRegEnvelope, FaWordpress } from "react-icons/fa6";
 import { GoArrowUp, GoLinkExternal } from "react-icons/go";
@@ -16,13 +16,25 @@ import { IoCloseOutline } from "react-icons/io5";
 export default function Home() {
     const [isScrolled, setIsScrolled] = useState<boolean>(false);
     const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
+    const [isLoaded, setIsLoaded] = useState<boolean>(false);
 
     useWindowOnEvent("scroll", (): void => {
         window.scrollY > 50 ? setIsScrolled(true) : setIsScrolled(false);
     });
 
+    useEffect(() => {
+        setTimeout(() => {
+            setIsLoaded(true)
+        }, 3000)
+    }, [])
+
     return (
         <>
+            <div className={`bg-codgray w-full h-screen fixed z-20 left-0 transition-all ${isLoaded ? 'bottom-[100%]' : 'bottom-0'}`}>
+                <div className="container mx-auto flex items-center justify-center h-full">
+                    <h1 className="font-bold text-3xl text-white tracking-[20px] animate-bounce">HELLO!</h1>
+                </div>
+            </div >
             <a href="#header" className="fixed bottom-[5%] right-[5%] text-nero w-10 h-10 hidden md:flex items-center justify-center rounded-full border border-white cursor-pointer hover:bg-nero hover:text-codgray transition-all">
                 <GoArrowUp />
             </a>
