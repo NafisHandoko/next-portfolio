@@ -101,7 +101,7 @@ export default function Home() {
                         />
                     </h1>
                     <a
-                        href="https://docs.google.com/document/d/1kL68djqiXt_wQhh5UV-bF0axnXl1FfUhbxsFk6ZmhNI/edit?usp=sharing"
+                        href="#"
                         target="_blank"
                         className="text-nero border border-nero hover:bg-nero hover:text-codgray transition-all rounded-md px-8 py-4 self-center"
                     >
