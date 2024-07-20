@@ -11,9 +11,11 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiNextdotjs } from "react-icons/si";
 import { ReactTyped } from "react-typed";
 import { useWindowOnEvent } from "./_hooks/useWindowOnEvent";
+import { IoCloseOutline } from "react-icons/io5";
 
 export default function Home() {
     const [isScrolled, setIsScrolled] = useState<boolean>(false);
+    const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
 
     useWindowOnEvent("scroll", (): void => {
         window.scrollY > 50 ? setIsScrolled(true) : setIsScrolled(false);
@@ -40,9 +42,23 @@ export default function Home() {
                 <a className="glow transition-all" target="_blank" href="https://dribbble.com/nafishandoko"><FaDribbble size={"17px"} /></a>
             </div>
             <nav
+                className={`${showMobileNav ? 'left-[50%] md:left-[100%]' : 'left-[100%]'} bg-white text-black-primary text-center fixed z-20 top-0 left-[100%] transition-all w-1/2 h-screen flex items-center justify-center`}>
+                <button onClick={() => setShowMobileNav(false)} className='text-3xl block md:hidden py-5 absolute top-4 right-6'><IoCloseOutline size={'40px'} /></button >
+                <ul className='container mx-auto flex flex-col items-center justify-between gap-7'>
+                    <li className='text-xl font-medium'><a href="#">Home</a></li>
+                    <li className='text-xl font-medium'><a href="#about">About</a></li>
+                    <li className='text-xl font-medium'><a href="#services">Services</a></li>
+                    <li className='text-xl font-medium'><a href="#skills">Skills</a></li>
+                    <li className='text-xl font-medium'><a href="#works">Works</a></li>
+                    <li className='text-xl font-medium'>
+                        <Link href="/articles">Articles</Link>
+                    </li>
+                </ul>
+            </nav >
+            <nav
                 className={`fixed z-10 left-0 right-0 w-full px-7 md:px-28 transition-all ${isScrolled ? 'glass py-6' : 'bg-mineshaft py-10'}`}>
                 <div className="container mx-auto flex flex-col md:flex-row items-center md:justify-center">
-                    <button className='text-3xl block md:hidden self-end text-nero'><BsListNested /></button>
+                    <button onClick={() => setShowMobileNav(true)} className='text-3xl block md:hidden self-end text-nero'><BsListNested /></button>
                     <ul className='hidden md:flex flex-row gap-x-7 items-center text-nero font-semibold'>
                         <li className="border border-transparent hover:border-b-white transition-all"><a className="glow transition-all"
                             href="#">Home</a></li>
