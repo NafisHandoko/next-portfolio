@@ -40,9 +40,9 @@ export default function Home() {
                 <a className="glow transition-all" target="_blank" href="https://dribbble.com/nafishandoko"><FaDribbble size={"17px"} /></a>
             </div>
             <nav
-                className={`fixed z-10 w-full px-7 md:px-28 transition-all ${isScrolled ? 'glass py-6' : 'bg-mineshaft py-10'}`}>
+                className={`fixed z-10 left-0 right-0 w-full px-7 md:px-28 transition-all ${isScrolled ? 'glass py-6' : 'bg-mineshaft py-10'}`}>
                 <div className="container mx-auto flex flex-col md:flex-row items-center md:justify-center">
-                    <button className='text-3xl block md:hidden self-end'><BsListNested /></button>
+                    <button className='text-3xl block md:hidden self-end text-nero'><BsListNested /></button>
                     <ul className='hidden md:flex flex-row gap-x-7 items-center text-nero font-semibold'>
                         <li className="border border-transparent hover:border-b-white transition-all"><a className="glow transition-all"
                             href="#">Home</a></li>
@@ -78,8 +78,8 @@ export default function Home() {
                     </h1>
                 </div>
             </header>
-            <section className="container mx-auto flex flex-row px-10 md:px-40 py-24">
-                <div className="w-1/2 flex flex-col gap-10">
+            <section className="container mx-auto flex flex-col gap-7 md:gap-0 md:flex-row px-10 md:px-40 py-24">
+                <div className="w-full md:w-1/2 flex flex-col gap-10">
                     <h2 className="uppercase text-nero font-bold text-3xl">About Me</h2>
                     <p className="text-silver">
                         I&apos;m a Computer Science student specializing in Information
@@ -92,7 +92,7 @@ export default function Home() {
                         I also interned for five months as a Software Engineer at PT GITS Indonesia, where I worked on Unit Testing for MyPertamina project using Jest and Vue Test Utils. I also handled frontend development for the POC Prodia-LIS project using Syncfusion React Spreadsheet library and collaborated on the frontend of the Carteapp project based on Figma UI Design.
                     </p>
                 </div>
-                <div className="w-1/2 flex items-center justify-end">
+                <div className="w-full md:w-1/2 flex items-center justify-center md:justify-end">
                     <Image
                         src="/assets/images/about-me.png"
                         alt="about me picture"
@@ -104,11 +104,11 @@ export default function Home() {
             <section className="container mx-auto flex flex-col px-10 md:px-40 py-24 gap-10">
                 <h2 className="uppercase text-nero font-bold text-3xl">Work Experiences</h2>
                 <div className="flex flex-col gap-10">
-                    <div className="flex flex-row gap-10">
-                        <div className="w-1/2">
+                    <div className="flex flex-col md:flex-row gap-3 md:gap-10">
+                        <div className="w-full md:w-1/2">
                             <span className="font-semibold text-jumbo">February 2024</span>
                         </div>
-                        <div className="w-1/2 flex flex-col gap-3">
+                        <div className="w-full md:w-1/2 flex flex-col gap-3">
                             <span className="text-xl font-semibold text-nero">Wordpress Developer - University of Jember</span>
                             <span className="font-semibold text-jumbo">Freelance</span>
                             <p className="text-silver">
@@ -122,11 +122,11 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-row gap-10">
-                        <div className="w-1/2">
+                    <div className="flex flex-col md:flex-row gap-3 md:gap-10">
+                        <div className="w-full md:w-1/2">
                             <span className="font-semibold text-jumbo">February 2024</span>
                         </div>
-                        <div className="w-1/2 flex flex-col gap-3">
+                        <div className="w-full md:w-1/2 flex flex-col gap-3">
                             <span className="text-xl font-semibold text-nero">Wordpress Developer - University of Jember</span>
                             <span className="font-semibold text-jumbo">Freelance</span>
                             <p className="text-silver">
@@ -140,11 +140,11 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-row gap-10">
-                        <div className="w-1/2">
+                    <div className="flex flex-col md:flex-row gap-3 md:gap-10">
+                        <div className="w-full md:w-1/2">
                             <span className="font-semibold text-jumbo">February 2024</span>
                         </div>
-                        <div className="w-1/2 flex flex-col gap-3">
+                        <div className="w-full md:w-1/2 flex flex-col gap-3">
                             <span className="text-xl font-semibold text-nero">Wordpress Developer - University of Jember</span>
                             <span className="font-semibold text-jumbo">Freelance</span>
                             <p className="text-silver">
@@ -158,11 +158,11 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-row gap-10">
-                        <div className="w-1/2">
+                    <div className="flex flex-col md:flex-row gap-3 md:gap-10">
+                        <div className="w-full md:w-1/2">
                             <span className="font-semibold text-jumbo">February 2024</span>
                         </div>
-                        <div className="w-1/2 flex flex-col gap-3">
+                        <div className="w-full md:w-1/2 flex flex-col gap-3">
                             <span className="text-xl font-semibold text-nero">Wordpress Developer - University of Jember</span>
                             <span className="font-semibold text-jumbo">Freelance</span>
                             <p className="text-silver">
@@ -180,7 +180,7 @@ export default function Home() {
             </section>
             <section className="container mx-auto flex flex-col px-10 md:px-40 py-24 gap-10">
                 <h2 className="uppercase text-nero font-bold text-3xl">Services</h2>
-                <div className="flex flex-row space-between gap-5">
+                <div className="flex flex-col md:flex-row space-between gap-5">
                     <div className="flex flex-col rounded-xl border border-mineshaft bg-mineshaft">
                         <div className="flex flex-col p-7 gap-3">
                             <FaLaptopCode className="text-nero text-3xl" />
