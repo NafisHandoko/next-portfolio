@@ -180,7 +180,7 @@ export default function Home() {
                             <span className="text-xl font-semibold text-nero">Software Engineer - <a href="http://gits.id" target="_blank" className="border border-transparent hover:border-b-white transition-all glow transition-all">Gits.id</a></span>
                             <span className="font-semibold text-jumbo">Internship</span>
                             <p className="text-silver">
-                                Wrote unit tests using Jest and Vue Test Utils for MyPertamina project and assisted with the frontend of the POC Prodia-LIS project using the Syncfusion React Spreadsheet library. On the Carteapp project, ensured the frontend adhered to the UI design in Figma and participated in validation. Became a guest speaker for the webinar "Unit Test with Jest & Vue Test Utils," sharing insights with 15-30 participants. Recognized as "Best Mentees" upon graduation for my dedication to professional growth.
+                                Wrote unit tests using Jest and Vue Test Utils for MyPertamina project and assisted with the frontend of the POC Prodia-LIS project using the Syncfusion React Spreadsheet library. On the Carteapp project, ensured the frontend adhered to the UI design in Figma and participated in validation. Became a guest speaker for the webinar &quot;Unit Test with Jest & Vue Test Utils&quot; sharing insights with 15-30 participants. Recognized as &quot;Best Mentees&quot; upon graduation for my dedication to professional growth.
                             </p>
                             <div className="flex flex-row flex-wrap items-center justify-start gap-2">
                                 <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">ReactJS</span>
@@ -199,7 +199,7 @@ export default function Home() {
                             <span className="text-xl font-semibold text-nero">Web Programmer - <a href="http://bisa.ai" target="_blank" className="border border-transparent hover:border-b-white transition-all glow transition-all">Bisa.ai</a></span>
                             <span className="font-semibold text-jumbo">Internship</span>
                             <p className="text-silver">
-                                Contributed to the Hade Matpro Project, collaborating with Backend Programmers and UI/UX Designers to develop components using ReactJS and Tailwind CSS. Spoke at webinars "Strategi SEO pada ReactJS" and "From Design to Code with React & Tailwind" for 30-40 participants. Aided API development using Flask and helped design user-friendly interfaces. Pursued courses in UI/UX Design and AI to enhance my skills.
+                                Contributed to the Hade Matpro Project, collaborating with Backend Programmers and UI/UX Designers to develop components using ReactJS and Tailwind CSS. Spoke at webinars &quot;Strategi SEO pada ReactJS&quot; and &quot;From Design to Code with React & Tailwind&quot; for 30-40 participants. Aided API development using Flask and helped design user-friendly interfaces. Pursued courses in UI/UX Design and AI to enhance my skills.
                             </p>
                             <div className="flex flex-row flex-wrap items-center justify-start gap-2">
                                 <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">ReactJS</span>
