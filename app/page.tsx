@@ -103,7 +103,7 @@ export default function Home() {
             </section>
             <section className="container mx-auto flex flex-col px-10 md:px-40 py-24 gap-10">
                 <h2 className="uppercase text-nero font-bold text-3xl">Work Experiences</h2>
-                <div className="flex flex-col gap-10">
+                <div className="flex flex-col gap-16">
                     <div className="flex flex-col md:flex-row gap-3 md:gap-10">
                         <div className="w-full md:w-1/2">
                             <span className="font-semibold text-jumbo">February 2024</span>
@@ -225,8 +225,8 @@ export default function Home() {
             <section className="container mx-auto flex flex-col px-10 md:px-40 py-24 gap-10">
                 <h2 className="uppercase text-nero font-bold text-3xl">Projects</h2>
                 <div className="flex flex-col">
-                    <div className="flex flex-row gap-10 border-y border-transparent hover:border-mineshaft transition-all py-7">
-                        <div className="w-1/2 flex flex-col gap-3">
+                    <div className="flex flex-col-reverse md:flex-row gap-5 md:gap-10 border-y border-transparent hover:border-mineshaft transition-all py-7">
+                        <div className="w-full md:w-1/2 flex flex-col gap-3">
                             <span className="text-xl font-semibold text-nero">Gotravel</span>
                             <p className="text-silver">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -242,12 +242,12 @@ export default function Home() {
                                 <FaGithub size={"20px"} />
                             </div>
                         </div>
-                        <div className="w-1/2 w-full flex justify-end">
-                            <div className="bg-[url('/assets/images/portfolio/gotravel.png')] bg-center bg-no-repeat bg-cover w-5/6 h-64 rounded-xl saturate-0 hover:saturate-100 transition-all"></div>
+                        <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+                            <div className="bg-[url('/assets/images/portfolio/gotravel.png')] bg-center bg-no-repeat bg-cover w-full md:w-5/6 h-56 md:h-64 rounded-xl saturate-0 hover:saturate-100 transition-all"></div>
                         </div>
                     </div>
-                    <div className="flex flex-row gap-10 border-y border-transparent hover:border-mineshaft transition-all py-7">
-                        <div className="w-1/2 flex flex-col gap-3">
+                    <div className="flex flex-col-reverse md:flex-row gap-5 md:gap-10 border-y border-transparent hover:border-mineshaft transition-all py-7">
+                        <div className="w-full md:w-1/2 flex flex-col gap-3">
                             <span className="text-xl font-semibold text-nero">Gotravel</span>
                             <p className="text-silver">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -263,12 +263,12 @@ export default function Home() {
                                 <FaGithub size={"20px"} />
                             </div>
                         </div>
-                        <div className="w-1/2 w-full flex justify-end">
-                            <div className="bg-[url('/assets/images/portfolio/gotravel.png')] bg-center bg-no-repeat bg-cover w-5/6 h-64 rounded-xl saturate-0 hover:saturate-100 transition-all"></div>
+                        <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+                            <div className="bg-[url('/assets/images/portfolio/gotravel.png')] bg-center bg-no-repeat bg-cover w-full md:w-5/6 h-56 md:h-64 rounded-xl saturate-0 hover:saturate-100 transition-all"></div>
                         </div>
                     </div>
-                    <div className="flex flex-row gap-10 border-y border-transparent hover:border-mineshaft transition-all py-7">
-                        <div className="w-1/2 flex flex-col gap-3">
+                    <div className="flex flex-col-reverse md:flex-row gap-5 md:gap-10 border-y border-transparent hover:border-mineshaft transition-all py-7">
+                        <div className="w-full md:w-1/2 flex flex-col gap-3">
                             <span className="text-xl font-semibold text-nero">Gotravel</span>
                             <p className="text-silver">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -284,8 +284,8 @@ export default function Home() {
                                 <FaGithub size={"20px"} />
                             </div>
                         </div>
-                        <div className="w-1/2 w-full flex justify-end">
-                            <div className="bg-[url('/assets/images/portfolio/gotravel.png')] bg-center bg-no-repeat bg-cover w-5/6 h-64 rounded-xl saturate-0 hover:saturate-100 transition-all"></div>
+                        <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+                            <div className="bg-[url('/assets/images/portfolio/gotravel.png')] bg-center bg-no-repeat bg-cover w-full md:w-5/6 h-56 md:h-64 rounded-xl saturate-0 hover:saturate-100 transition-all"></div>
                         </div>
                     </div>
                 </div>
@@ -315,7 +315,7 @@ export default function Home() {
             </section>
             <section className="container mx-auto flex flex-col items-center text-center px-10 md:px-40 py-36 gap-10">
                 <h2 className="text-4xl font-bold text-nero">Keep In Touch</h2>
-                <p className="text-silver w-1/2">
+                <p className="text-silver w-full md:w-1/2">
                     Whether you have an idea for a project or just want to chat, feel free to shoot me an email!
                 </p>
                 <a href="https://wa.me/6281332079137" target="_blank" className="text-nero border border-nero hover:bg-nero hover:text-codgray transition-all rounded-xl px-8 py-4 self-center">Let&apos;s Talk!</a>
