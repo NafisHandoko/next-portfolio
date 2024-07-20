@@ -80,11 +80,11 @@ export default function Home() {
                 <div className="w-1/2 flex flex-col gap-10">
                     <h2 className="uppercase text-nero font-bold text-3xl">About Me</h2>
                     <p className="text-silver">
-                        I'm a Computer Science student specializing in Information
+                        I&apos;m a Computer Science student specializing in Information
                         Technology at the University of Jember.
                         <br />
                         <br />
-                        I'm passionate about technology, particularly software development and UI design. I have experience with JavaScript, Laravel, Flask, and Flutter. I completed a five-month internship as a Web Programmer at PT Bisa Artifisial Indonesia, where I used ReactJS and Tailwind CSS to create websites.
+                        I&apos;m passionate about technology, particularly software development and UI design. I have experience with JavaScript, Laravel, Flask, and Flutter. I completed a five-month internship as a Web Programmer at PT Bisa Artifisial Indonesia, where I used ReactJS and Tailwind CSS to create websites.
                         <br />
                         <br />
                         I also interned for five months as a Software Engineer at PT GITS Indonesia, where I worked on Unit Testing for MyPertamina project using Jest and Vue Test Utils. I also handled frontend development for the POC Prodia-LIS project using Syncfusion React Spreadsheet library and collaborated on the frontend of the Carteapp project based on Figma UI Design.
