@@ -4,10 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { BsListNested, BsPhone } from "react-icons/bs";
-import { FaDribbble, FaGithub, FaInstagram, FaLaptopCode, FaLaravel, FaLinkedin, FaRegEnvelope, FaWordpress } from "react-icons/fa6";
+import { FaDribbble, FaFigma, FaGithub, FaInstagram, FaLaptopCode, FaLaravel, FaLinkedin, FaRegEnvelope, FaWordpress } from "react-icons/fa6";
 import { GoArrowUp, GoLinkExternal } from "react-icons/go";
 import { MdOutlinePalette } from "react-icons/md";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { RiFlutterFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiNextdotjs } from "react-icons/si";
 import { ReactTyped } from "react-typed";
 import { useWindowOnEvent } from "./_hooks/useWindowOnEvent";
@@ -93,7 +93,7 @@ export default function Home() {
                     <h1 className="font-bold text-4xl">
                         Hi i am&nbsp;
                         <ReactTyped
-                            strings={['Nafis Handoko', 'a Web Developer', 'a Mobile Developer', 'a UI Designer']}
+                            strings={['Nafis Handoko', 'a Web Developer', 'a Mobile Developer', 'a UI/UX Designer']}
                             typeSpeed={60}
                             backSpeed={40}
                             // attr="placeholder"
@@ -133,70 +133,71 @@ export default function Home() {
                             <span className="font-semibold text-jumbo">February 2024</span>
                         </div>
                         <div className="w-full md:w-1/2 flex flex-col gap-3">
-                            <span className="text-xl font-semibold text-nero">Wordpress Developer - University of Jember</span>
+                            <span className="text-xl font-semibold text-nero">Wordpress Developer - <a href="http://unej.ac.id" target="_blank" className="border border-transparent hover:border-b-white transition-all glow transition-all">University of Jember</a></span>
                             <span className="font-semibold text-jumbo">Freelance</span>
                             <p className="text-silver">
-                                Collaborated with the Chief Technology Officer (CTO) to spearhead the development of the second iteration of the Eduwork student dashboard, employing technologies such as React, Typescript, Redux, and Tailwind CSS.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
                             <div className="flex flex-row flex-wrap items-center justify-start gap-2">
-                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Next.js</span>
-                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Next.js</span>
-                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Next.js</span>
-                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Next.js</span>
+                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Wordpress</span>
+                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Elementor</span>
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-col md:flex-row gap-3 md:gap-10">
                         <div className="w-full md:w-1/2">
-                            <span className="font-semibold text-jumbo">February 2024</span>
+                            <span className="font-semibold text-jumbo">Sep - Dec 2023</span>
                         </div>
                         <div className="w-full md:w-1/2 flex flex-col gap-3">
-                            <span className="text-xl font-semibold text-nero">Wordpress Developer - University of Jember</span>
-                            <span className="font-semibold text-jumbo">Freelance</span>
+                            <span className="text-xl font-semibold text-nero">Programmer - <a href="http://eduwork.id" target="_blank" className="border border-transparent hover:border-b-white transition-all glow transition-all">Eduwork.id</a></span>
+                            <span className="font-semibold text-jumbo">Internship</span>
                             <p className="text-silver">
-                                Collaborated with the Chief Technology Officer (CTO) to spearhead the development of the second iteration of the Eduwork student dashboard, employing technologies such as React, Typescript, Redux, and Tailwind CSS.
+                                Spearheaded the development of the Eduwork student dashboard with the CTO using React, Typescript, Redux, and Tailwind CSS. Played a key role in delivering the Eduwork Sosmed website with a team, using React JS, React Native, Tailwind CSS, Alpine.js, and Laravel. Authored project documentation for knowledge transfer, participated in daily scrum meetings with the Project Manager and CEO, and mentored new interns, fostering a collaborative environment.
                             </p>
                             <div className="flex flex-row flex-wrap items-center justify-start gap-2">
-                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Next.js</span>
-                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Next.js</span>
-                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Next.js</span>
-                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Next.js</span>
+                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">ReactJS</span>
+                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Typescript</span>
+                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Redux</span>
+                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Tailwind CSS</span>
+                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">React Native</span>
+                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Alpine.js</span>
+                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Laravel</span>
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-col md:flex-row gap-3 md:gap-10">
                         <div className="w-full md:w-1/2">
-                            <span className="font-semibold text-jumbo">February 2024</span>
+                            <span className="font-semibold text-jumbo">Feb - Jun 2023</span>
                         </div>
                         <div className="w-full md:w-1/2 flex flex-col gap-3">
-                            <span className="text-xl font-semibold text-nero">Wordpress Developer - University of Jember</span>
-                            <span className="font-semibold text-jumbo">Freelance</span>
+                            <span className="text-xl font-semibold text-nero">Software Engineer - <a href="http://gits.id" target="_blank" className="border border-transparent hover:border-b-white transition-all glow transition-all">Gits.id</a></span>
+                            <span className="font-semibold text-jumbo">Internship</span>
                             <p className="text-silver">
-                                Collaborated with the Chief Technology Officer (CTO) to spearhead the development of the second iteration of the Eduwork student dashboard, employing technologies such as React, Typescript, Redux, and Tailwind CSS.
+                                Wrote unit tests using Jest and Vue Test Utils for MyPertamina project and assisted with the frontend of the POC Prodia-LIS project using the Syncfusion React Spreadsheet library. On the Carteapp project, ensured the frontend adhered to the UI design in Figma and participated in validation. Became a guest speaker for the webinar "Unit Test with Jest & Vue Test Utils," sharing insights with 15-30 participants. Recognized as "Best Mentees" upon graduation for my dedication to professional growth.
                             </p>
                             <div className="flex flex-row flex-wrap items-center justify-start gap-2">
-                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Next.js</span>
-                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Next.js</span>
-                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Next.js</span>
-                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Next.js</span>
+                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">ReactJS</span>
+                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Nuxt 3</span>
+                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Tailwind CSS</span>
+                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Typescript</span>
+                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Jest</span>
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-col md:flex-row gap-3 md:gap-10">
                         <div className="w-full md:w-1/2">
-                            <span className="font-semibold text-jumbo">February 2024</span>
+                            <span className="font-semibold text-jumbo">Aug - Dec 2022</span>
                         </div>
                         <div className="w-full md:w-1/2 flex flex-col gap-3">
-                            <span className="text-xl font-semibold text-nero">Wordpress Developer - University of Jember</span>
-                            <span className="font-semibold text-jumbo">Freelance</span>
+                            <span className="text-xl font-semibold text-nero">Web Programmer - <a href="http://bisa.ai" target="_blank" className="border border-transparent hover:border-b-white transition-all glow transition-all">Bisa.ai</a></span>
+                            <span className="font-semibold text-jumbo">Internship</span>
                             <p className="text-silver">
-                                Collaborated with the Chief Technology Officer (CTO) to spearhead the development of the second iteration of the Eduwork student dashboard, employing technologies such as React, Typescript, Redux, and Tailwind CSS.
+                                Contributed to the Hade Matpro Project, collaborating with Backend Programmers and UI/UX Designers to develop components using ReactJS and Tailwind CSS. Spoke at webinars "Strategi SEO pada ReactJS" and "From Design to Code with React & Tailwind" for 30-40 participants. Aided API development using Flask and helped design user-friendly interfaces. Pursued courses in UI/UX Design and AI to enhance my skills.
                             </p>
                             <div className="flex flex-row flex-wrap items-center justify-start gap-2">
-                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Next.js</span>
-                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Next.js</span>
-                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Next.js</span>
-                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Next.js</span>
+                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">ReactJS</span>
+                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Tailwind CSS</span>
+                                <span className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">Flask</span>
                             </div>
                         </div>
                     </div>
@@ -205,7 +206,7 @@ export default function Home() {
             <section id="services" className="container mx-auto flex flex-col px-10 md:px-40 py-24 gap-10">
                 <h2 className="uppercase text-nero font-bold text-3xl">Services</h2>
                 <div className="flex flex-col md:flex-row space-between gap-5">
-                    <div className="flex flex-col rounded-xl border border-mineshaft bg-mineshaft">
+                    <div className="flex flex-col rounded-xl border border-mineshaft hover:border-nero transition-all bg-mineshaft">
                         <div className="flex flex-col p-7 gap-3">
                             <FaLaptopCode className="text-nero text-3xl" />
                             <h3 className="font-bold text-xl text-nero">Web Development</h3>
@@ -218,30 +219,24 @@ export default function Home() {
                             <FaWordpress size={"25px"} />
                         </div>
                     </div>
-                    <div className="flex flex-col rounded-xl border border-mineshaft bg-mineshaft">
+                    <div className="flex flex-col rounded-xl border border-mineshaft hover:border-nero transition-all bg-mineshaft">
                         <div className="flex flex-col p-7 gap-3">
                             <BsPhone className="text-nero text-3xl" />
-                            <h3 className="font-bold text-xl text-nero">Web Development</h3>
-                            <p className="text-nero">I can help you build a good looking website with stunning animation</p>
+                            <h3 className="font-bold text-xl text-nero">Mobile Development</h3>
+                            <p className="text-nero">I am able to create mobile app with Flutter that can help you solve your problem</p>
                         </div>
                         <div className="flex flex-row items-center p-7 gap-3 text-nero bg-codgray rounded-b-xl">
-                            <SiNextdotjs size={"25px"} />
-                            <RiTailwindCssFill size={"25px"} />
-                            <FaLaravel size={"25px"} />
-                            <FaWordpress size={"25px"} />
+                            <RiFlutterFill size={"25px"} />
                         </div>
                     </div>
-                    <div className="flex flex-col rounded-xl border border-mineshaft bg-mineshaft">
+                    <div className="flex flex-col rounded-xl border border-mineshaft hover:border-nero transition-all bg-mineshaft">
                         <div className="flex flex-col p-7 gap-3">
                             <MdOutlinePalette className="text-nero text-3xl" />
-                            <h3 className="font-bold text-xl text-nero">Web Development</h3>
-                            <p className="text-nero">I can help you build a good looking website with stunning animation</p>
+                            <h3 className="font-bold text-xl text-nero">UI/UX Design</h3>
+                            <p className="text-nero">I can help you build a complete prototye of your products</p>
                         </div>
                         <div className="flex flex-row items-center p-7 gap-3 text-nero bg-codgray rounded-b-xl">
-                            <SiNextdotjs size={"25px"} />
-                            <RiTailwindCssFill size={"25px"} />
-                            <FaLaravel size={"25px"} />
-                            <FaWordpress size={"25px"} />
+                            <FaFigma size={"25px"} />
                         </div>
                     </div>
                 </div>
