@@ -89,7 +89,7 @@ export default function Home() {
                 </div>
             </nav >
             <header id="header" className="bg-mineshaft text-nero">
-                <div className="min-h-screen container mx-auto w-full flex flex-col items-center justify-center gap-y-2 text-center px-10 md:px-0">
+                <div className="min-h-screen container mx-auto w-full flex flex-col items-center justify-center gap-y-7 text-center px-10 md:px-0">
                     <h1 className="font-bold text-4xl">
                         Hi i am&nbsp;
                         <ReactTyped
@@ -100,6 +100,13 @@ export default function Home() {
                             loop
                         />
                     </h1>
+                    <a
+                        href="https://docs.google.com/document/d/1kL68djqiXt_wQhh5UV-bF0axnXl1FfUhbxsFk6ZmhNI/edit?usp=sharing"
+                        target="_blank"
+                        className="text-nero border border-nero hover:bg-nero hover:text-codgray transition-all rounded-md px-8 py-4 self-center"
+                    >
+                        Download my resume
+                    </a>
                 </div>
             </header>
             <section id="about" className="container mx-auto flex flex-col gap-7 md:gap-0 md:flex-row px-10 md:px-40 py-24">
@@ -206,36 +213,36 @@ export default function Home() {
             <section id="services" className="container mx-auto flex flex-col px-10 md:px-40 py-24 gap-10">
                 <h2 className="uppercase text-nero font-bold text-3xl">Services</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-                    <div className="flex flex-col rounded-xl border border-mineshaft hover:border-nero transition-all bg-mineshaft">
+                    <div className="flex flex-col rounded-md border border-mineshaft hover:border-nero transition-all bg-mineshaft">
                         <div className="flex flex-col p-7 gap-3">
                             <FaLaptopCode className="text-nero text-3xl" />
                             <h3 className="font-bold text-xl text-nero">Web Development</h3>
                             <p className="text-nero">I can help you build a good looking website with stunning animation</p>
                         </div>
-                        <div className="flex flex-row items-center p-7 gap-3 text-nero bg-codgray rounded-b-xl mt-auto">
+                        <div className="flex flex-row items-center p-7 gap-3 text-nero bg-codgray rounded-b-md mt-auto">
                             <SiNextdotjs size={"25px"} />
                             <RiTailwindCssFill size={"25px"} />
                             <FaLaravel size={"25px"} />
                             <FaWordpress size={"25px"} />
                         </div>
                     </div>
-                    <div className="flex flex-col rounded-xl border border-mineshaft hover:border-nero transition-all bg-mineshaft">
+                    <div className="flex flex-col rounded-md border border-mineshaft hover:border-nero transition-all bg-mineshaft">
                         <div className="flex flex-col p-7 gap-3">
                             <BsPhone className="text-nero text-3xl" />
                             <h3 className="font-bold text-xl text-nero">Mobile Development</h3>
                             <p className="text-nero">I am able to create mobile app with Flutter that can help you solve your problem</p>
                         </div>
-                        <div className="flex flex-row items-center p-7 gap-3 text-nero bg-codgray rounded-b-xl mt-auto">
+                        <div className="flex flex-row items-center p-7 gap-3 text-nero bg-codgray rounded-b-md mt-auto">
                             <RiFlutterFill size={"25px"} />
                         </div>
                     </div>
-                    <div className="flex flex-col rounded-xl border border-mineshaft hover:border-nero transition-all bg-mineshaft">
+                    <div className="flex flex-col rounded-md border border-mineshaft hover:border-nero transition-all bg-mineshaft">
                         <div className="flex flex-col p-7 gap-3">
                             <MdOutlinePalette className="text-nero text-3xl" />
                             <h3 className="font-bold text-xl text-nero">UI/UX Design</h3>
                             <p className="text-nero">I can help you build a complete prototye of your products</p>
                         </div>
-                        <div className="flex flex-row items-center p-7 gap-3 text-nero bg-codgray rounded-b-xl mt-auto">
+                        <div className="flex flex-row items-center p-7 gap-3 text-nero bg-codgray rounded-b-md mt-auto">
                             <FaFigma size={"25px"} />
                         </div>
                     </div>
@@ -262,7 +269,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-                            <div className="bg-[url('/assets/images/portfolio/gotravel.png')] bg-center bg-no-repeat bg-cover w-full md:w-5/6 h-56 md:h-64 rounded-xl saturate-0 hover:saturate-100 transition-all"></div>
+                            <div className="bg-[url('/assets/images/portfolio/gotravel.png')] bg-center bg-no-repeat bg-cover w-full md:w-5/6 h-56 md:h-64 rounded-md saturate-0 hover:saturate-100 transition-all"></div>
                         </div>
                     </div>
                     <div className="flex flex-col-reverse md:flex-row gap-5 md:gap-10 border-y border-transparent hover:border-mineshaft transition-all py-7">
@@ -283,7 +290,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-                            <div className="bg-[url('/assets/images/portfolio/gotravel.png')] bg-center bg-no-repeat bg-cover w-full md:w-5/6 h-56 md:h-64 rounded-xl saturate-0 hover:saturate-100 transition-all"></div>
+                            <div className="bg-[url('/assets/images/portfolio/gotravel.png')] bg-center bg-no-repeat bg-cover w-full md:w-5/6 h-56 md:h-64 rounded-md saturate-0 hover:saturate-100 transition-all"></div>
                         </div>
                     </div>
                     <div className="flex flex-col-reverse md:flex-row gap-5 md:gap-10 border-y border-transparent hover:border-mineshaft transition-all py-7">
@@ -304,40 +311,40 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-                            <div className="bg-[url('/assets/images/portfolio/gotravel.png')] bg-center bg-no-repeat bg-cover w-full md:w-5/6 h-56 md:h-64 rounded-xl saturate-0 hover:saturate-100 transition-all"></div>
+                            <div className="bg-[url('/assets/images/portfolio/gotravel.png')] bg-center bg-no-repeat bg-cover w-full md:w-5/6 h-56 md:h-64 rounded-md saturate-0 hover:saturate-100 transition-all"></div>
                         </div>
                     </div>
                 </div>
-                <Link href="/projects" className="text-nero border border-nero hover:bg-nero hover:text-codgray transition-all rounded-xl px-8 py-4 self-center">Show more</Link>
+                <Link href="/projects" className="text-nero border border-nero hover:bg-nero hover:text-codgray transition-all rounded-md px-8 py-4 self-center">Show more</Link>
             </section>
             <section id="articles" className="container mx-auto flex flex-col px-10 md:px-40 py-24 gap-10">
                 <h2 className="uppercase text-nero font-bold text-3xl">Articles</h2>
                 <div className="flex flex-col">
-                    <Link href={'/articles/1'} className="flex flex-col gap-3 border border-transparent hover:border-mineshaft transition-all rounded-xl py-5 hover:p-5">
+                    <Link href={'/articles/1'} className="flex flex-col gap-3 border border-transparent hover:border-mineshaft transition-all rounded-md py-5 hover:p-5">
                         <h3 className="font-semibold text-xl text-nero">Best way to structure your project in Nextjs using Atomic Design Methodology</h3>
                         <span className="text-silver text-sm">May 12, 2024</span>
                     </Link>
-                    <Link href={'/articles/1'} className="flex flex-col gap-3 border border-transparent hover:border-mineshaft transition-all rounded-xl py-5 hover:p-5">
+                    <Link href={'/articles/1'} className="flex flex-col gap-3 border border-transparent hover:border-mineshaft transition-all rounded-md py-5 hover:p-5">
                         <h3 className="font-semibold text-xl text-nero">Best way to structure your project in Nextjs using Atomic Design Methodology</h3>
                         <span className="text-silver text-sm">May 12, 2024</span>
                     </Link>
-                    <Link href={'/articles/1'} className="flex flex-col gap-3 border border-transparent hover:border-mineshaft transition-all rounded-xl py-5 hover:p-5">
+                    <Link href={'/articles/1'} className="flex flex-col gap-3 border border-transparent hover:border-mineshaft transition-all rounded-md py-5 hover:p-5">
                         <h3 className="font-semibold text-xl text-nero">Best way to structure your project in Nextjs using Atomic Design Methodology</h3>
                         <span className="text-silver text-sm">May 12, 2024</span>
                     </Link>
-                    <Link href={'/articles/1'} className="flex flex-col gap-3 border border-transparent hover:border-mineshaft transition-all rounded-xl py-5 hover:p-5">
+                    <Link href={'/articles/1'} className="flex flex-col gap-3 border border-transparent hover:border-mineshaft transition-all rounded-md py-5 hover:p-5">
                         <h3 className="font-semibold text-xl text-nero">Best way to structure your project in Nextjs using Atomic Design Methodology</h3>
                         <span className="text-silver text-sm">May 12, 2024</span>
                     </Link>
                 </div>
-                <Link href="/articles" className="text-nero border border-nero hover:bg-nero hover:text-codgray transition-all rounded-xl px-8 py-4 self-center">Show more</Link>
+                <Link href="/articles" className="text-nero border border-nero hover:bg-nero hover:text-codgray transition-all rounded-md px-8 py-4 self-center">Show more</Link>
             </section>
             <section id="contact" className="container mx-auto flex flex-col items-center text-center px-10 md:px-40 py-36 gap-10">
                 <h2 className="text-4xl font-bold text-nero">Keep In Touch</h2>
                 <p className="text-silver w-full md:w-1/2">
                     Whether you have an idea for a project or just want to chat, feel free to chat me!
                 </p>
-                <a href="https://wa.me/6281332079137" target="_blank" className="text-nero border border-nero hover:bg-nero hover:text-codgray transition-all rounded-xl px-8 py-4 self-center">Let&apos;s Talk!</a>
+                <a href="https://wa.me/6281332079137" target="_blank" className="text-nero border border-nero hover:bg-nero hover:text-codgray transition-all rounded-md px-8 py-4 self-center">Let&apos;s Talk!</a>
             </section>
             <footer className="container mx-auto flex flex-col gap-5 items-center text-center py-7">
                 <div className="flex flex-row md:hidden gap-5 text-nero">
