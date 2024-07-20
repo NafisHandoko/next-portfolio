@@ -50,17 +50,23 @@ export default function Home() {
                             href="#about">About</a>
                         </li>
                         <li className="border border-transparent hover:border-b-white transition-all"><a className="glow transition-all"
+                            href="#experiences">Experiences</a>
+                        </li>
+                        <li className="border border-transparent hover:border-b-white transition-all"><a className="glow transition-all"
                             href="#services">Services</a>
                         </li>
                         <li className="border border-transparent hover:border-b-white transition-all"><a className="glow transition-all"
-                            href="#skills">Skills</a>
+                            href="#projects">Projects</a>
                         </li>
                         <li className="border border-transparent hover:border-b-white transition-all"><a className="glow transition-all"
-                            href="#works">Works</a>
+                            href="#articles">Articles</a>
                         </li>
-                        <li className="border border-transparent hover:border-b-white transition-all">
+                        <li className="border border-transparent hover:border-b-white transition-all"><a className="glow transition-all"
+                            href="#contact">Contact</a>
+                        </li>
+                        {/* <li className="border border-transparent hover:border-b-white transition-all">
                             <Link className="glow transition-all" href="/articles">Articles</Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </nav >
@@ -78,7 +84,7 @@ export default function Home() {
                     </h1>
                 </div>
             </header>
-            <section className="container mx-auto flex flex-col gap-7 md:gap-0 md:flex-row px-10 md:px-40 py-24">
+            <section id="about" className="container mx-auto flex flex-col gap-7 md:gap-0 md:flex-row px-10 md:px-40 py-24">
                 <div className="w-full md:w-1/2 flex flex-col gap-10">
                     <h2 className="uppercase text-nero font-bold text-3xl">About Me</h2>
                     <p className="text-silver">
@@ -101,7 +107,7 @@ export default function Home() {
                     />
                 </div>
             </section>
-            <section className="container mx-auto flex flex-col px-10 md:px-40 py-24 gap-10">
+            <section id="experiences" className="container mx-auto flex flex-col px-10 md:px-40 py-24 gap-10">
                 <h2 className="uppercase text-nero font-bold text-3xl">Work Experiences</h2>
                 <div className="flex flex-col gap-16">
                     <div className="flex flex-col md:flex-row gap-3 md:gap-10">
@@ -178,7 +184,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className="container mx-auto flex flex-col px-10 md:px-40 py-24 gap-10">
+            <section id="services" className="container mx-auto flex flex-col px-10 md:px-40 py-24 gap-10">
                 <h2 className="uppercase text-nero font-bold text-3xl">Services</h2>
                 <div className="flex flex-col md:flex-row space-between gap-5">
                     <div className="flex flex-col rounded-xl border border-mineshaft bg-mineshaft">
@@ -222,7 +228,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className="container mx-auto flex flex-col px-10 md:px-40 py-24 gap-10">
+            <section id="projects" className="container mx-auto flex flex-col px-10 md:px-40 py-24 gap-10">
                 <h2 className="uppercase text-nero font-bold text-3xl">Projects</h2>
                 <div className="flex flex-col">
                     <div className="flex flex-col-reverse md:flex-row gap-5 md:gap-10 border-y border-transparent hover:border-mineshaft transition-all py-7">
@@ -291,7 +297,7 @@ export default function Home() {
                 </div>
                 <Link href="/projects" className="text-nero border border-nero hover:bg-nero hover:text-codgray transition-all rounded-xl px-8 py-4 self-center">Show more</Link>
             </section>
-            <section className="container mx-auto flex flex-col px-10 md:px-40 py-24 gap-10">
+            <section id="articles" className="container mx-auto flex flex-col px-10 md:px-40 py-24 gap-10">
                 <h2 className="uppercase text-nero font-bold text-3xl">Articles</h2>
                 <div className="flex flex-col">
                     <Link href={'/articles/1'} className="flex flex-col gap-3 border border-transparent hover:border-mineshaft transition-all rounded-xl py-5 hover:p-5">
@@ -313,7 +319,7 @@ export default function Home() {
                 </div>
                 <Link href="/articles" className="text-nero border border-nero hover:bg-nero hover:text-codgray transition-all rounded-xl px-8 py-4 self-center">Show more</Link>
             </section>
-            <section className="container mx-auto flex flex-col items-center text-center px-10 md:px-40 py-36 gap-10">
+            <section id="contact" className="container mx-auto flex flex-col items-center text-center px-10 md:px-40 py-36 gap-10">
                 <h2 className="text-4xl font-bold text-nero">Keep In Touch</h2>
                 <p className="text-silver w-full md:w-1/2">
                     Whether you have an idea for a project or just want to chat, feel free to shoot me an email!

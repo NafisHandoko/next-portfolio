@@ -16,6 +16,10 @@
   }
 } */
 
+html {
+  @apply scroll-smooth
+}
+
 body {
   @apply bg-codgray
   /* color: rgb(var(--foreground-rgb));
