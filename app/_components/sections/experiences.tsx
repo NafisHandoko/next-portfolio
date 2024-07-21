@@ -6,7 +6,7 @@ export default function ExperiencesSection() {
         <section id="experiences" className="container mx-auto flex flex-col px-10 md:px-40 py-24 gap-10">
             <h2 className="uppercase text-nero font-bold text-3xl">Work Experiences</h2>
             <div className="flex flex-col gap-16">
-                {experiencesData && experiencesData.map((experience: any, index: any) => <ExperiencesCard experience={experience} index={index} />)}
+                {experiencesData && experiencesData.map((experience: any, index: any) => <ExperiencesCard experience={experience} key={index} index={index} />)}
             </div>
         </section>
     )

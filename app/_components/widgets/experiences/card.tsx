@@ -1,3 +1,5 @@
+import Badge from "../../base/badge";
+
 export default function ExperiencesCard({ experience }: any) {
     return (
         <div className="flex flex-col md:flex-row gap-3 md:gap-10">
@@ -9,7 +11,7 @@ export default function ExperiencesCard({ experience }: any) {
                 <span className="font-semibold text-jumbo">{experience.type}</span>
                 <p className="text-silver">{experience.description}</p>
                 <div className="flex flex-row flex-wrap items-center justify-start gap-2">
-                    {experience.techStack && experience.techStack.map((techStack: any, index: any) => <span key={index} className="font-medium text-sm text-nero bg-mineshaft rounded-full px-4 py-2">{techStack}</span>)}
+                    {experience.techStack && experience.techStack.map((techStack: any, index: any) => <Badge key={index} text={techStack} />)}
                 </div>
             </div>
         </div>
