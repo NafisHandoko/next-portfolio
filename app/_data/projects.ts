@@ -10,7 +10,7 @@ export const projectsData = [
     {
         name: 'Eduwork Sosmed',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        techStack: ['ReactJS', 'Typescript', 'Redux', 'Tailwind CSS', 'React Native', 'Alpine.js', 'Laravel'],
+        techStack: ['Web', 'ReactJS', 'Typescript', 'Redux', 'Tailwind CSS', 'React Native', 'Alpine.js', 'Laravel'],
         demoURL: 'https://sosmed.edudev.xyz/',
         repoURL: '',
         image: '/assets/images/portfolio/eduwork.png'
@@ -18,7 +18,7 @@ export const projectsData = [
     {
         name: 'Gotravel',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        techStack: ['ReactJS', 'Tailwind CSS'],
+        techStack: ['Web', 'ReactJS', 'Tailwind CSS'],
         demoURL: 'https://react-gotravel.netlify.app/',
         repoURL: 'https://github.com/nafishandoko/gotravel',
         image: '/assets/images/portfolio/gotravel.png'
