@@ -14,7 +14,7 @@ export default function AboutSection() {
                     <br />
                     <br />
                     I also interned for five months as a Software Engineer at PT GITS Indonesia, where I worked on Unit Testing for MyPertamina project using Jest and Vue Test Utils. I also handled frontend development for the POC Prodia-LIS project using Syncfusion React Spreadsheet library and collaborated on the frontend of the Carteapp project based on Figma UI Design. */}
-                    Results-driven Software Engineer with expertise in React, Typescript, and Tailwind CSS. Have internship experience in several companies in Indonesia like Eduwork, Gits.id, and Bisa AI. Proven ability in Scrum methodology, API development, and UI/UX design. Recognized as one of the "Best Mentees" in Gits.id for dedication to professional growth. Excels in collaborative environments and passionate about leveraging technology for impactful solutions.
+                    Results-driven Software Engineer with expertise in React, Typescript, and Tailwind CSS. Have internship experience in several companies in Indonesia like Eduwork, Gits.id, and Bisa AI. Proven ability in Scrum methodology, API development, and UI/UX design. Recognized as one of the &quot;Best Mentees&quot; in Gits.id for dedication to professional growth. Excels in collaborative environments and passionate about leveraging technology for impactful solutions.
                 </p>
             </div>
             <div className="w-full md:w-1/2 flex items-center justify-center md:justify-end">
