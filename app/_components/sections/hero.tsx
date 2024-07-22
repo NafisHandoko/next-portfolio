@@ -1,5 +1,6 @@
 "use client"
 import { ReactTyped } from "react-typed";
+import Button from "../base/button";
 
 export default function HeroSection() {
     return (
@@ -15,13 +16,7 @@ export default function HeroSection() {
                         loop
                     />
                 </h1>
-                <a
-                    href="#"
-                    // target="_blank"
-                    className="text-nero border border-nero hover:bg-nero hover:text-codgray transition-all rounded-md px-8 py-4 self-center"
-                >
-                    Download my resume
-                </a>
+                <Button type="a" text="Download my resume" href="#" />
             </div>
         </header>
     )

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Button from "../base/button";
 
 export default function ArticlesSection() {
     return (
@@ -22,7 +23,7 @@ export default function ArticlesSection() {
                     <span className="text-silver text-sm">May 12, 2024</span>
                 </Link>
             </div>
-            <Link href="/articles" className="text-nero border border-nero hover:bg-nero hover:text-codgray transition-all rounded-md px-8 py-4 self-center">Show more</Link>
+            <Button type="Link" href="/articles" text="Show more" className="self-center" />
         </section>
     )
 }
