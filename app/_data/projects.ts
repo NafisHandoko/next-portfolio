@@ -16,6 +16,14 @@ export const projectsData = [
         image: '/assets/images/portfolio/eduwork.png'
     },
     {
+        name: 'Speedside Landing Page',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        techStack: ['Web', 'Next.js', 'Typescript', 'Tailwind CSS'],
+        demoURL: 'https://speedside.vercel.app/',
+        repoURL: 'https://github.com/nafishandoko/speedside',
+        image: '/assets/images/portfolio/speedside.png'
+    },
+    {
         name: 'Gits.id Old Website Clone',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         techStack: ['Web', 'HTML', 'CSS', 'Javascript'],
@@ -64,7 +72,7 @@ export const projectsData = [
         image: '/assets/images/portfolio/depr-calc.png'
     },
     {
-        name: 'Gotravel',
+        name: 'Gotravel Landing Page',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         techStack: ['Web', 'ReactJS', 'Tailwind CSS'],
         demoURL: 'https://react-gotravel.netlify.app/',
