@@ -1,9 +1,9 @@
 "use client"
 
 import { useState } from "react";
-import Button from "../_components/base/button";
-import ProjectsCard2 from "../_components/widgets/projects/card2";
-import { projectsData } from "../_data/projects";
+import Button from "../../_components/base/button";
+import ProjectsCard2 from "../../_components/widgets/projects/card2";
+import { projectsData } from "../../_data/projects";
 
 export default function ProjectsPage() {
     const [category, setCategory] = useState('All')
