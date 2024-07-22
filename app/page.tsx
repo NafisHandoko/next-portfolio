@@ -8,8 +8,6 @@ import ServicesSection from "./_components/sections/services";
 import ProjectsSection from "./_components/sections/projects";
 import ArticlesSection from "./_components/sections/articles";
 import ContactSection from "./_components/sections/contact";
-import FooterSection from "./_components/sections/footer";
-import HeaderSection from "./_components/sections/header";
 
 export default function Home() {
     const [isLoaded, setIsLoaded] = useState<boolean>(false);
@@ -27,7 +25,6 @@ export default function Home() {
                     <h1 className="font-bold text-3xl text-white tracking-[20px] animate-bounce">HELLO!</h1>
                 </div>
             </div >
-            <HeaderSection />
             <HeroSection />
             <AboutSection />
             <ExperiencesSection />
@@ -35,7 +32,6 @@ export default function Home() {
             <ProjectsSection />
             <ArticlesSection />
             <ContactSection />
-            <FooterSection />
         </>
     );
 }

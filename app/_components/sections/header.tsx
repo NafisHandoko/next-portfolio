@@ -1,4 +1,7 @@
+"use client"
+
 import { useWindowOnEvent } from "@/app/_hooks/useWindowOnEvent";
+import Link from "next/link";
 import { useState } from "react";
 import { BsListNested } from "react-icons/bs";
 import { FaDribbble, FaGithub, FaInstagram, FaLinkedin, FaRegEnvelope } from "react-icons/fa6";
@@ -37,42 +40,42 @@ export default function HeaderSection() {
                 className={`${showMobileNav ? 'left-[50%] md:left-[100%]' : 'left-[100%]'} bg-white text-black-primary text-center fixed z-20 top-0 left-[100%] transition-all w-1/2 h-screen flex items-center justify-center`}>
                 <button onClick={() => setShowMobileNav(false)} className='text-3xl block md:hidden py-5 absolute top-4 right-6'><IoCloseOutline size={'40px'} /></button >
                 <ul className='container mx-auto flex flex-col items-center justify-between gap-7'>
-                    <li className='text-xl font-medium'><a href="#">Home</a></li>
-                    <li className='text-xl font-medium'><a href="#about">About</a></li>
-                    <li className='text-xl font-medium'><a href="#experiences">Experiences</a></li>
-                    <li className='text-xl font-medium'><a href="#services">Services</a></li>
-                    <li className='text-xl font-medium'><a href="#projects">Projects</a></li>
-                    <li className='text-xl font-medium'><a href="#articles">Articles</a></li>
-                    <li className='text-xl font-medium'><a href="#contact">Contact</a></li>
+                    <li className='text-xl font-medium'><Link href="/">Home</Link></li>
+                    <li className='text-xl font-medium'><Link href="/#about">About</Link></li>
+                    <li className='text-xl font-medium'><Link href="/#experiences">Experiences</Link></li>
+                    <li className='text-xl font-medium'><Link href="/#services">Services</Link></li>
+                    <li className='text-xl font-medium'><Link href="/#projects">Projects</Link></li>
+                    <li className='text-xl font-medium'><Link href="/#articles">Articles</Link></li>
+                    <li className='text-xl font-medium'><Link href="/#contact">Contact</Link></li>
                     {/* <li className='text-xl font-medium'>
                         <Link href="/articles">Articles</Link>
                     </li> */}
                 </ul>
             </nav >
             <nav
-                className={`fixed z-10 left-0 right-0 w-full px-7 md:px-28 transition-all ${isScrolled ? 'glass py-6' : 'bg-mineshaft py-10'}`}>
+                className={`fixed z-10 left-0 right-0 w-full px-7 md:px-28 transition-all ${isScrolled ? 'glass py-6' : 'bg-transparent py-10'}`}>
                 <div className="container mx-auto flex flex-col md:flex-row items-center md:justify-center">
                     <button onClick={() => setShowMobileNav(true)} className='text-3xl block md:hidden self-end text-nero'><BsListNested /></button>
                     <ul className='hidden md:flex flex-row gap-x-7 items-center text-nero font-semibold'>
-                        <li className="border border-transparent hover:border-b-white transition-all"><a className="glow transition-all"
-                            href="#">Home</a></li>
-                        <li className="border border-transparent hover:border-b-white transition-all"><a className="glow transition-all"
-                            href="#about">About</a>
+                        <li className="border border-transparent hover:border-b-white transition-all"><Link className="glow transition-all"
+                            href="/">Home</Link></li>
+                        <li className="border border-transparent hover:border-b-white transition-all"><Link className="glow transition-all"
+                            href="/#about">About</Link>
                         </li>
-                        <li className="border border-transparent hover:border-b-white transition-all"><a className="glow transition-all"
-                            href="#experiences">Experiences</a>
+                        <li className="border border-transparent hover:border-b-white transition-all"><Link className="glow transition-all"
+                            href="/#experiences">Experiences</Link>
                         </li>
-                        <li className="border border-transparent hover:border-b-white transition-all"><a className="glow transition-all"
-                            href="#services">Services</a>
+                        <li className="border border-transparent hover:border-b-white transition-all"><Link className="glow transition-all"
+                            href="/#services">Services</Link>
                         </li>
-                        <li className="border border-transparent hover:border-b-white transition-all"><a className="glow transition-all"
-                            href="#projects">Projects</a>
+                        <li className="border border-transparent hover:border-b-white transition-all"><Link className="glow transition-all"
+                            href="/#projects">Projects</Link>
                         </li>
-                        <li className="border border-transparent hover:border-b-white transition-all"><a className="glow transition-all"
-                            href="#articles">Articles</a>
+                        <li className="border border-transparent hover:border-b-white transition-all"><Link className="glow transition-all"
+                            href="/#articles">Articles</Link>
                         </li>
-                        <li className="border border-transparent hover:border-b-white transition-all"><a className="glow transition-all"
-                            href="#contact">Contact</a>
+                        <li className="border border-transparent hover:border-b-white transition-all"><Link className="glow transition-all"
+                            href="/#contact">Contact</Link>
                         </li>
                         {/* <li className="border border-transparent hover:border-b-white transition-all">
                             <Link className="glow transition-all" href="/articles">Articles</Link>
