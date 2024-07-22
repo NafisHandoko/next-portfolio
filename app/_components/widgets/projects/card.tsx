@@ -14,8 +14,8 @@ export default function ProjectsCard({ project }: any) {
                     {project.techStack && project.techStack.map((techStack: any, index: any) => <Badge key={index} text={techStack} />)}
                 </div>
                 <div className="flex flex-row items-center gap-3 text-nero mt-auto">
-                    <GoLinkExternal size={"20px"} />
-                    <FaGithub size={"20px"} />
+                    {project.demoURL != '' && <a href={project.demoURL} target="_blank" rel="noopener noreferrer"><GoLinkExternal size={"20px"} /></a>}
+                    {project.repoURL != '' && <a href={project.repoURL} target="_blank" rel="noopener noreferrer"><FaGithub size={"20px"} /></a>}
                 </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center md:justify-end">
