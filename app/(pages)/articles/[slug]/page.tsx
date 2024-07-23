@@ -1,7 +1,9 @@
 import ArticlesCard2 from "@/app/_components/widgets/articles/card2";
-import { articlesData } from "@/app/_data/articles";
+import getArticles from "@/app/_services/articles/getArticles";
 
-export default function ArticleDetailPage() {
+export default async function ArticleDetailPage() {
+    const articlesData = await getArticles()
+
     return (
         <div>
             <div className="bg-mineshaft" id="header">
@@ -34,7 +36,7 @@ export default function ArticleDetailPage() {
                 <div className="flex flex-col py-20 gap-10">
                     <h2 className="text-nero font-bold text-3xl">Other articles</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                        {articlesData && articlesData.map((article: any, i: any) => <ArticlesCard2 article={article} key={i} />)}
+                        {articlesData && articlesData.map((article: any, i: any) => <ArticlesCard2 article={article.post} key={i} />)}
                     </div>
                 </div>
             </div>
