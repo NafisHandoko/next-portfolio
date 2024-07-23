@@ -24,7 +24,7 @@ export default function Home() {
                 <div className="container mx-auto flex items-center justify-center h-full">
                     <h1 className="font-bold text-3xl text-white tracking-[20px] animate-bounce">HELLO!</h1>
                 </div>
-            </div > */}
+            </div> */}
             <HeroSection />
             <AboutSection />
             <ExperiencesSection />
