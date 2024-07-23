@@ -9,7 +9,7 @@ export default function HeroSection() {
                 <h1 className="font-bold text-4xl">
                     Hi i am&nbsp;
                     <ReactTyped
-                        strings={['Nafis Handoko', 'a Web Developer', 'a Mobile Developer', 'a UI/UX Designer']}
+                        strings={['Nafis Handoko', 'a Software Engineer', 'a Web Developer', 'a Mobile Developer', 'a UI/UX Designer']}
                         typeSpeed={60}
                         backSpeed={40}
                         // attr="placeholder"
