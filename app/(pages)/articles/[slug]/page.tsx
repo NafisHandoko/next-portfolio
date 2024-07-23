@@ -16,9 +16,6 @@ export default async function ArticleDetailPage({ params }: { params: { slug: st
             </div>
             <div className="flex flex-col px-10 md:px-40 divide-y divide-mineshaft">
                 <div className="flex flex-row gap-7 py-20">
-                    <div className="w-full md:w-3/4 text-nero">
-                        {article?.body}
-                    </div>
                     <div className="w-1/4 hidden md:flex flex-col gap-4">
                         <span className="text-nero font-bold text-xl">Table of Contents</span>
                         <div className="flex flex-col gap-3 text-sm">
@@ -33,6 +30,9 @@ export default async function ArticleDetailPage({ params }: { params: { slug: st
                             <span className="text-jumbo">Examples</span>
                             <span className="text-jumbo">Closure</span>
                         </div>
+                    </div>
+                    <div className="w-full md:w-3/4 text-nero">
+                        {article?.body}
                     </div>
                 </div>
                 <div className="flex flex-col py-20 gap-10">
