@@ -38,7 +38,10 @@ export default async function ArticleDetailPage({ params }: { params: { slug: st
                 <div className="flex flex-col py-20 gap-10">
                     <h2 className="text-nero font-bold text-3xl">Other articles</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                        {articlesData && articlesData.map((article: any, i: any) => <ArticlesCard2 article={article.post} key={i} />)}
+                        {articlesData && articlesData
+                            .filter((article) => article.post.frontmatter.slug != params.slug)
+                            .map((article: any, i: any) => <ArticlesCard2 article={article.post} key={i} />)
+                        }
                     </div>
                 </div>
             </div>
