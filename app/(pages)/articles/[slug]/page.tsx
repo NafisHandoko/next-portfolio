@@ -1,7 +1,7 @@
 export default function ArticleDetailPage() {
     return (
         <div>
-            <div className="bg-mineshaft">
+            <div className="bg-mineshaft" id="header">
                 <div className="min-h-screen container mx-auto flex flex-col items-center justify-center gap-3 text-center px-7 md:px-64">
                     <h1 className="text-nero font-semibold text-3xl">Best way to structure your project in Nextjs using Atomic Design Methodology</h1>
                     <span className="text-silver">May 12, 2024</span>

@@ -9,7 +9,7 @@ export default function ProjectsPage() {
     const [category, setCategory] = useState('All')
 
     return (
-        <div className="container mx-auto flex flex-col items-center px-10 md:px-40 py-24 pt-36 gap-16">
+        <div className="container mx-auto flex flex-col items-center px-10 md:px-40 py-24 pt-36 gap-16" id="header">
             <h2 className="uppercase text-nero font-bold text-3xl">Projects</h2>
             <div className="flex flex-row flex-wrap gap-4 items-center justify-center">
                 <Button type="tab" text="All" className={category == 'All' ? '!bg-nero !text-codgray' : ''} onClick={() => setCategory('All')} />
