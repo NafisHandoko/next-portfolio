@@ -1,3 +1,4 @@
+import CustomMDX from "@/app/_components/base/custom-mdx";
 import ArticlesCard2 from "@/app/_components/widgets/articles/card2";
 import getArticle from "@/app/_services/articles/getArticle";
 import getArticles from "@/app/_services/articles/getArticles";
@@ -31,8 +32,8 @@ export default async function ArticleDetailPage({ params }: { params: { slug: st
                             <span className="text-jumbo">Closure</span>
                         </div>
                     </div>
-                    <div className="w-full md:w-3/4 text-nero">
-                        {article?.body}
+                    <div className="w-full md:w-3/4 text-nero flex flex-col gap-5">
+                        <CustomMDX source={article?.body as string} />
                     </div>
                 </div>
                 <div className="flex flex-col py-20 gap-10">
