@@ -7,6 +7,7 @@ import getArticles from "@/app/_services/articles/getArticles";
 export default async function ArticleDetailPage({ params }: { params: { slug: string } }) {
     const articlesData = await getArticles()
     const article = await getArticle(params.slug)
+    const headings = article?.body.match(/#{2,4} .+/g)
 
     return (
         <div>
@@ -18,8 +19,8 @@ export default async function ArticleDetailPage({ params }: { params: { slug: st
             </div>
             <div className="flex flex-col px-10 md:px-40 divide-y divide-mineshaft">
                 <div className="flex flex-row gap-7 py-20 items-start">
-                    <TOC articleBody={article?.body} />
-                    <div className="w-full md:w-3/4 text-nero flex flex-col gap-5">
+                    {headings && <TOC headings={headings} />}
+                    <div className="w-full text-nero flex flex-col gap-5">
                         <CustomMDX source={article?.body as string} />
                     </div>
                 </div>

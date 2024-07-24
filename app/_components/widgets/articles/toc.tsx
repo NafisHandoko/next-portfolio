@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from "react"
 
-export default function TOC({ articleBody }: any) {
-    const headings = articleBody.match(/#{2,4} .+/g)
+export default function TOC({ headings }: any) {
     const toc = headings.map((heading: any) => {
         const level = heading.match(/#/g).length - 2
         const title = heading.replace(/#{2,4} /, '')
