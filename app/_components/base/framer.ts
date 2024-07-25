@@ -8,5 +8,7 @@ export const {
     h2: MotionH2,
     p: MotionP,
     section: MotionSection,
-    header: MotionHeader
+    header: MotionHeader,
+    a: MotionA,
+    li: MotionLi
 } = motion
