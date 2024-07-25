@@ -4,7 +4,7 @@ import Badge from "../../base/badge";
 
 export default function ProjectsCard2({ project }: any) {
     return (
-        <div className="rounded-md border border-mineshaft hover:border-nero group transition-all flex flex-col gap-3 p-2">
+        <div className="h-full rounded-md border border-mineshaft hover:border-nero group transition-all flex flex-col gap-3 p-2">
             <div style={{ backgroundImage: `url(${project.image})` }} className={`bg-center bg-no-repeat bg-cover w-full h-56 md:h-64 rounded-sm saturate-0 group-hover:saturate-100 transition-all`}></div>
             <div className="p-3 flex flex-col gap-5">
                 <h2 className="font-bold text-nero">{project.name}</h2>
