@@ -60,7 +60,7 @@ export default async function ArticleDetailPage({ params }: { params: { slug: st
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         {articlesData && articlesData
                             .filter((article) => article.post.frontmatter.slug != params.slug)
-                            .map((article: any, i: any) =>
+                            .map((article, i) =>
                                 <MotionDiv
                                     key={i}
                                     variants={fadeInTransition("up", "tween", 0.2, 0.5)}

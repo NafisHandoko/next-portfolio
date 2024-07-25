@@ -23,7 +23,7 @@ export default async function ArticlesSection() {
                 Articles
             </MotionH2>
             <div className="flex flex-col">
-                {articlesData && articlesData.map((article: any, i: any) =>
+                {articlesData && articlesData.map((article, i) =>
                     <MotionDiv key={i} variants={textVariantTransition(i * 0.5)} >
                         <ArticlesCard article={article.post} />
                     </MotionDiv>

@@ -15,7 +15,7 @@ export default async function ArticlesPage() {
                 className="uppercase text-nero font-bold text-3xl"
             >Articles</MotionH2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                {articlesData && articlesData.map((article: any, i: any) =>
+                {articlesData && articlesData.map((article, i) =>
                     <MotionDiv
                         key={i}
                         variants={fadeInTransition("up", "tween", 0.2, 0.7)}

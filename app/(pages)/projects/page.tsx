@@ -26,7 +26,7 @@ export default function ProjectsPage() {
                 Projects
             </MotionH2>
             <div className="flex flex-row flex-wrap gap-4 items-center justify-center">
-                {projectCategories.map((category: any, i: any) =>
+                {projectCategories.map((category, i) =>
                     <MotionDiv
                         key={i}
                         variants={fadeInTransition("up", "tween", 0.1 * i, 0.2)}
