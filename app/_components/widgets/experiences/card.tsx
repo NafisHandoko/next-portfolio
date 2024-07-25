@@ -14,7 +14,7 @@ export default function ExperiencesCard({ experience }: any) {
             <MotionDiv variants={fadeInTransition("right", "tween", 0.3, 0.6)} className="w-full md:w-1/2">
                 <span className="font-semibold text-jumbo">{experience.periode}</span>
             </MotionDiv>
-            <MotionDiv variants={fadeInTransition("left", "tween", 0.3, 1)} className="w-full md:w-1/2 flex flex-col gap-3">
+            <MotionDiv variants={fadeInTransition("left", "tween", 0.3, 0.6)} className="w-full md:w-1/2 flex flex-col gap-3">
                 <span className="text-xl font-semibold text-nero">{experience.position} - <a href={experience.companyURL} target="_blank" className="border border-transparent hover:border-b-white transition-all glow transition-all">{experience.companyName}</a></span>
                 <span className="font-semibold text-jumbo">{experience.type}</span>
                 <p className="text-silver">{experience.description}</p>

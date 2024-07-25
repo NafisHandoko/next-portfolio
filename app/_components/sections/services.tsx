@@ -18,7 +18,7 @@ export default function ServicesSection() {
         >
             <MotionH2 variants={textVariantTransition(0.2)} className="uppercase text-nero font-bold text-3xl">Services</MotionH2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-                <MotionDiv variants={fadeInTransition("up", "tween", 0.3, 0.5)} className="flex flex-col rounded-md border border-mineshaft hover:border-nero transition-all bg-mineshaft">
+                <MotionDiv variants={fadeInTransition("up", "tween", 0, 0.7)} className="flex flex-col rounded-md border border-mineshaft hover:border-nero transition-all bg-mineshaft">
                     <div className="flex flex-col p-7 gap-3">
                         <FaLaptopCode className="text-nero text-3xl" />
                         <h3 className="font-bold text-xl text-nero">Web Development</h3>
@@ -31,7 +31,7 @@ export default function ServicesSection() {
                         <FaWordpress size={"25px"} />
                     </div>
                 </MotionDiv>
-                <MotionDiv variants={fadeInTransition("up", "tween", 0.4, 0.5)} className="flex flex-col rounded-md border border-mineshaft hover:border-nero transition-all bg-mineshaft">
+                <MotionDiv variants={fadeInTransition("up", "tween", 0.2, 0.7)} className="flex flex-col rounded-md border border-mineshaft hover:border-nero transition-all bg-mineshaft">
                     <div className="flex flex-col p-7 gap-3">
                         <BsPhone className="text-nero text-3xl" />
                         <h3 className="font-bold text-xl text-nero">Mobile Development</h3>
@@ -41,7 +41,7 @@ export default function ServicesSection() {
                         <RiFlutterFill size={"25px"} />
                     </div>
                 </MotionDiv>
-                <MotionDiv variants={fadeInTransition("up", "tween", 0.5, 0.5)} className="flex flex-col rounded-md border border-mineshaft hover:border-nero transition-all bg-mineshaft">
+                <MotionDiv variants={fadeInTransition("up", "tween", 0.4, 0.7)} className="flex flex-col rounded-md border border-mineshaft hover:border-nero transition-all bg-mineshaft">
                     <div className="flex flex-col p-7 gap-3">
                         <MdOutlinePalette className="text-nero text-3xl" />
                         <h3 className="font-bold text-xl text-nero">UI/UX Design</h3>
