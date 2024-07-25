@@ -10,5 +10,6 @@ export const {
     section: MotionSection,
     header: MotionHeader,
     a: MotionA,
-    li: MotionLi
+    li: MotionLi,
+    span: MotionSpan
 } = motion

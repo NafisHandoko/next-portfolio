@@ -34,7 +34,7 @@ export default function TOC({ headings }: any) {
     }, [toc])
 
     return (
-        <div className="w-1/4 hidden md:flex flex-col gap-4 my-0 sticky top-28">
+        <div className="flex flex-col gap-4">
             <span className="text-nero font-bold text-xl">Table of Contents</span>
             <div className="flex flex-col gap-3 text-sm">
                 {toc && toc.map((heading: any, i: any) =>

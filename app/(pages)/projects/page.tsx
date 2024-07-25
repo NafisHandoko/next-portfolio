@@ -42,7 +42,7 @@ export default function ProjectsPage() {
                 {filteredProjects.map((project, index) =>
                     <MotionDiv
                         key={index}
-                        variants={fadeInTransition("up", "tween", 0.2, 0.7)}
+                        variants={fadeInTransition("up", "tween", 0.2, 0.5)}
                         viewport={{ once: true, amount: 0.25 }}
                         whileInView="show"
                         initial="hidden"
