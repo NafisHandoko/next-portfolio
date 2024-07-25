@@ -25,7 +25,7 @@ export default function HeaderSection() {
     return (
         <>
             <MotionA
-                variants={fadeInTransition("up", "tween", 0, 0.4)}
+                variants={fadeInTransition("up", "tween", 0.2, 0.4)}
                 initial="hidden"
                 animate="show"
                 href="#header"
@@ -33,7 +33,7 @@ export default function HeaderSection() {
             >
                 <GoArrowUp />
             </MotionA>
-            <MotionDiv initial="hidden" animate="show" variants={fadeInTransition("right", "tween", 0, 0.5)} className="fixed top-[30%] left-[6%] hidden md:flex flex-col items-center gap-1">
+            <MotionDiv initial="hidden" animate="show" variants={fadeInTransition("right", "tween", 0.2, 0.5)} className="fixed top-[30%] left-[6%] hidden md:flex flex-col items-center gap-1">
                 <div className="h-[35vh] border-r border-white"></div>
                 <div className="rounded-full p-1 bg-white"></div>
                 <div className="h-[2vh] border-r border-white"></div>
@@ -41,11 +41,11 @@ export default function HeaderSection() {
                 <div className="h-[5vh] border-r border-white"></div>
             </MotionDiv>
             <div className="hidden md:flex flex-col items-center justify-between py-10 fixed top-[30%] right-[6%] text-white h-[50vh]">
-                <MotionA initial="hidden" animate="show" variants={fadeInTransition("left", "tween", 0.4, 0.2)} className="glow transition-all" target="_blank" href="https://github.com/nafishandoko"><FaGithub size={"17px"} /></MotionA>
-                <MotionA initial="hidden" animate="show" variants={fadeInTransition("left", "tween", 0.3, 0.2)} className="glow transition-all" target="_blank" href="https://www.linkedin.com/in/nafishandoko"><FaLinkedin size={"17px"} /></MotionA>
-                <MotionA initial="hidden" animate="show" variants={fadeInTransition("left", "tween", 0.2, 0.2)} className="glow transition-all" target="_blank" href="https://instagram.com/nafishandoko"><FaInstagram size={"17px"} /></MotionA>
-                <MotionA initial="hidden" animate="show" variants={fadeInTransition("left", "tween", 0.1, 0.2)} className="glow transition-all" target="_blank" href="mailto:naffisioner@gmail.com"><FaRegEnvelope size={"17px"} /></MotionA>
-                <MotionA initial="hidden" animate="show" variants={fadeInTransition("left", "tween", 0, 0.2)} className="glow transition-all" target="_blank" href="https://dribbble.com/nafishandoko"><FaDribbble size={"17px"} /></MotionA>
+                <MotionA initial="hidden" animate="show" variants={fadeInTransition("left", "tween", 0.6, 0.2)} className="glow transition-all" target="_blank" href="https://github.com/nafishandoko"><FaGithub size={"17px"} /></MotionA>
+                <MotionA initial="hidden" animate="show" variants={fadeInTransition("left", "tween", 0.5, 0.2)} className="glow transition-all" target="_blank" href="https://www.linkedin.com/in/nafishandoko"><FaLinkedin size={"17px"} /></MotionA>
+                <MotionA initial="hidden" animate="show" variants={fadeInTransition("left", "tween", 0.4, 0.2)} className="glow transition-all" target="_blank" href="https://instagram.com/nafishandoko"><FaInstagram size={"17px"} /></MotionA>
+                <MotionA initial="hidden" animate="show" variants={fadeInTransition("left", "tween", 0.3, 0.2)} className="glow transition-all" target="_blank" href="mailto:naffisioner@gmail.com"><FaRegEnvelope size={"17px"} /></MotionA>
+                <MotionA initial="hidden" animate="show" variants={fadeInTransition("left", "tween", 0.2, 0.2)} className="glow transition-all" target="_blank" href="https://dribbble.com/nafishandoko"><FaDribbble size={"17px"} /></MotionA>
             </div>
             <nav
                 className={`${showMobileNav ? 'left-[50%] md:left-[100%]' : 'left-[100%]'} bg-white text-black-primary text-center fixed z-20 top-0 left-[100%] transition-all w-1/2 h-screen flex items-center justify-center`}>
@@ -68,25 +68,25 @@ export default function HeaderSection() {
                 <div className="container mx-auto flex flex-col md:flex-row items-center md:justify-center">
                     <button onClick={() => setShowMobileNav(true)} className='text-3xl block md:hidden self-end text-nero'><BsListNested /></button>
                     <ul className='hidden md:flex flex-row gap-x-7 items-center text-nero font-semibold'>
-                        <MotionLi initial="hidden" animate="show" variants={fadeInTransition("down", "tween", 0, 0.2)} className="border border-transparent hover:border-b-white transition-all">
+                        <MotionLi initial="hidden" animate="show" variants={fadeInTransition("down", "tween", 0.2, 0.2)} className="border border-transparent hover:border-b-white transition-all">
                             <Link className="glow transition-all" href="/">Home</Link>
                         </MotionLi>
-                        <MotionLi initial="hidden" animate="show" variants={fadeInTransition("down", "tween", 0.1, 0.2)} className="border border-transparent hover:border-b-white transition-all">
+                        <MotionLi initial="hidden" animate="show" variants={fadeInTransition("down", "tween", 0.3, 0.2)} className="border border-transparent hover:border-b-white transition-all">
                             <Link className="glow transition-all" href="/#about">About</Link>
                         </MotionLi>
-                        <MotionLi initial="hidden" animate="show" variants={fadeInTransition("down", "tween", 0.2, 0.2)} className="border border-transparent hover:border-b-white transition-all">
+                        <MotionLi initial="hidden" animate="show" variants={fadeInTransition("down", "tween", 0.4, 0.2)} className="border border-transparent hover:border-b-white transition-all">
                             <Link className="glow transition-all" href="/#experiences">Experiences</Link>
                         </MotionLi>
-                        <MotionLi initial="hidden" animate="show" variants={fadeInTransition("down", "tween", 0.3, 0.2)} className="border border-transparent hover:border-b-white transition-all">
+                        <MotionLi initial="hidden" animate="show" variants={fadeInTransition("down", "tween", 0.5, 0.2)} className="border border-transparent hover:border-b-white transition-all">
                             <Link className="glow transition-all" href="/#services">Services</Link>
                         </MotionLi>
-                        <MotionLi initial="hidden" animate="show" variants={fadeInTransition("down", "tween", 0.4, 0.2)} className="border border-transparent hover:border-b-white transition-all">
+                        <MotionLi initial="hidden" animate="show" variants={fadeInTransition("down", "tween", 0.6, 0.2)} className="border border-transparent hover:border-b-white transition-all">
                             <Link className="glow transition-all" href="/#projects">Projects</Link>
                         </MotionLi>
-                        <MotionLi initial="hidden" animate="show" variants={fadeInTransition("down", "tween", 0.5, 0.2)} className="border border-transparent hover:border-b-white transition-all">
+                        <MotionLi initial="hidden" animate="show" variants={fadeInTransition("down", "tween", 0.7, 0.2)} className="border border-transparent hover:border-b-white transition-all">
                             <Link className="glow transition-all" href="/#articles">Articles</Link>
                         </MotionLi>
-                        <MotionLi initial="hidden" animate="show" variants={fadeInTransition("down", "tween", 0.6, 0.2)} className="border border-transparent hover:border-b-white transition-all">
+                        <MotionLi initial="hidden" animate="show" variants={fadeInTransition("down", "tween", 0.8, 0.2)} className="border border-transparent hover:border-b-white transition-all">
                             <Link className="glow transition-all" href="/#contact">Contact</Link>
                         </MotionLi>
                         {/* <li className="border border-transparent hover:border-b-white transition-all">
