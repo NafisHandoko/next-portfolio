@@ -31,6 +31,10 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
+section {
+  @apply overflow-x-hidden
+}
+
 .glow:hover {
   /* text-shadow: 0 0 50px white; */
   text-shadow:
