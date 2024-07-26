@@ -42,12 +42,17 @@ export default async function ArticleDetailPage({ params }: { params: { slug: st
                             <TOC headings={headings} />
                         </MotionDiv>
                     }
-                    <MotionDiv
+
+                    {/* trying to animate this but not working, still a bug */}
+                    {/* <MotionDiv
                         variants={fadeInTransition("up", "tween", 0.1, 0.6)}
                         className="w-full text-nero flex flex-col gap-5"
                     >
                         <CustomMDX source={article?.body as string} />
-                    </MotionDiv>
+                    </MotionDiv> */}
+                    <div className="w-full text-nero flex flex-col gap-5">
+                        <CustomMDX source={article?.body as string} />
+                    </div>
                 </MotionDiv>
                 <MotionDiv
                     variants={staggeredContainer(0.1, 0.1)}
