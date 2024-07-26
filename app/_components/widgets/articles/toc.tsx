@@ -2,14 +2,21 @@
 
 import { useEffect, useState } from "react"
 
-export default function TOC({ headings }: any) {
-    const toc = headings.map((heading: any) => {
-        const level = heading.match(/#/g).length - 2
-        const title = heading.replace(/#{2,4} /, '')
-        return { title, level }
-    })
+export default function TOC({ headings }: { headings: RegExpMatchArray }) {
+    const toc = headings.map((heading) => {
+        if (heading && typeof heading === 'string') {
+            const matchResult = heading.match(/#/g);
+            if (matchResult) {
+                const level = matchResult.length - 2;
+                const title = heading.replace(/#{2,4} /, '');
+                return { title, level };
+            }
+        }
+        return null;
+    }).filter(item => item !== null);
 
-    const [activeId, setActiveId] = useState()
+    const [activeId, setActiveId] = useState<string>()
+    
     useEffect(() => {
         const handleScroll = () => {
             let currentId
@@ -37,7 +44,7 @@ export default function TOC({ headings }: any) {
         <div className="flex flex-col gap-4">
             <span className="text-nero font-bold text-xl">Table of Contents</span>
             <div className="flex flex-col gap-3 text-sm">
-                {toc && toc.map((heading: any, i: any) =>
+                {toc && toc.map((heading, i) =>
                     <span className={`${heading.title == activeId ? 'text-nero font-semibold' : 'text-jumbo'} ml-${heading.level * 7}`} key={i}>{heading.title}</span>
                 )}
             </div>

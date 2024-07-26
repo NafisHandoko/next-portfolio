@@ -20,7 +20,7 @@ export default function ExperiencesSection() {
                 Work Experiences
             </MotionH2>
             <div className="flex flex-col gap-16">
-                {experiencesData && experiencesData.map((experience, index) => <ExperiencesCard experience={experience} key={index} index={index} />)}
+                {experiencesData && experiencesData.map((experience, index) => <ExperiencesCard experience={experience} key={index} />)}
             </div>
         </MotionSection>
     )

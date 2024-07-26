@@ -3,8 +3,9 @@ import { GoLinkExternal } from "react-icons/go";
 import Badge from "../../base/badge";
 import { MotionDiv } from "../../base/framer";
 import { fadeInTransition, staggeredContainer } from "@/app/_utils/motion";
+import { ProjectType } from "@/app/_types/project";
 
-export default function ProjectsCard({ project }: any) {
+export default function ProjectsCard({ project }: { project: ProjectType }) {
     return (
         <MotionDiv
             variants={staggeredContainer(0.1, 0.1)}
@@ -19,7 +20,7 @@ export default function ProjectsCard({ project }: any) {
                     {project.description}
                 </p>
                 <div className="flex flex-row flex-wrap items-center justify-start gap-2">
-                    {project.techStack && project.techStack.map((techStack: any, index: any) => <Badge key={index} text={techStack} />)}
+                    {project.techStack && project.techStack.map((techStack, index) => <Badge key={index} text={techStack} />)}
                 </div>
                 <div className="flex flex-row items-center gap-3 text-nero mt-auto">
                     {project.demoURL != '' && <a href={project.demoURL} target="_blank" rel="noopener noreferrer"><GoLinkExternal size={"20px"} /></a>}

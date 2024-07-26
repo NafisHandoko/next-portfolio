@@ -1,8 +1,9 @@
 import { fadeInTransition, staggeredContainer } from "@/app/_utils/motion";
 import Badge from "../../base/badge";
 import { MotionDiv } from "../../base/framer";
+import { ExperienceType } from "@/app/_types/experience";
 
-export default function ExperiencesCard({ experience }: any) {
+export default function ExperiencesCard({ experience }: { experience: ExperienceType }) {
     return (
         <MotionDiv
             variants={staggeredContainer(0.1, 0.1)}
@@ -19,7 +20,7 @@ export default function ExperiencesCard({ experience }: any) {
                 <span className="font-semibold text-jumbo">{experience.type}</span>
                 <p className="text-silver">{experience.description}</p>
                 <div className="flex flex-row flex-wrap items-center justify-start gap-2">
-                    {experience.techStack && experience.techStack.map((techStack: any, index: any) => <Badge key={index} text={techStack} />)}
+                    {experience.techStack && experience.techStack.map((techStack, index) => <Badge key={index} text={techStack} />)}
                 </div>
             </MotionDiv>
         </MotionDiv>

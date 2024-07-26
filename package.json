@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@rena.to/github-blog": "^0.4.2",
+    "@types/mdx": "^2.0.13",
     "framer-motion": "^11.3.17",
     "next": "14.2.5",
     "next-mdx-remote": "^5.0.0",
