@@ -5,7 +5,7 @@ export const experiencesData = [
         companyName: 'University of Jember',
         companyURL: 'https://unej.ac.id',
         type: 'Freelance',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        description: 'Responsible for helping a client build a website using WordPress to display information and the latest news about the Chemical Engineering program at the University of Jember.',
         techStack: ['Wordpress', 'Elementor']
     },
     {
@@ -14,7 +14,7 @@ export const experiencesData = [
         companyName: 'Eduwork.id',
         companyURL: 'https://eduwork.id/',
         type: 'Internship',
-        description: 'Spearheaded the development of the Eduwork student dashboard with the CTO using React, Typescript, Redux, and Tailwind CSS. Played a key role in delivering the Eduwork Sosmed website with a team, using React JS, React Native, Tailwind CSS, Alpine.js, and Laravel. Authored project documentation for knowledge transfer, participated in daily scrum meetings with the Project Manager and CEO, and mentored new interns, fostering a collaborative environment.',
+        description: 'Spearheaded the development of the Eduwork student dashboard with the CTO using React, Typescript, Redux, and Tailwind CSS. Played a key role in delivering the Eduwork Sosmed website with a team, using React JS, React Native, Tailwind CSS, Alpine.js, and Laravel. Authored project documentation for knowledge transfer, participated in daily scrum meetings with the Project Manager and CEO, and mentored new interns.',
         techStack: ['ReactJS', 'Typescript', 'Redux', 'Tailwind CSS', 'React Native', 'Alpine.js', 'Laravel']
     },
     {
