@@ -26,7 +26,14 @@ export default function AboutSection() {
                     <br />
                     <br />
                     I also interned for five months as a Software Engineer at PT GITS Indonesia, where I worked on Unit Testing for MyPertamina project using Jest and Vue Test Utils. I also handled frontend development for the POC Prodia-LIS project using Syncfusion React Spreadsheet library and collaborated on the frontend of the Carteapp project based on Figma UI Design. */}
-                    Results-driven Software Engineer with expertise in React, Typescript, and Tailwind CSS. Internship experience at prominent Indonesian companies, including Eduwork, Gits.id, and Bisa AI. Proficient in Scrum methodology, API development, and UI/UX Design.
+                    Hello there!
+                    <br />
+                    I&apos;m Nafis Arinda Rizky Putra Handoko
+                    <br />
+                    23 y.o., Indonesia 🇮🇩
+                    <br />
+                    <br />
+                    I am a results-driven Software Engineer with expertise in React, Typescript, and Tailwind CSS. Have several internship experience at prominent Indonesian companies, including Eduwork, Gits.id, and Bisa AI. Proficient in Scrum methodology, API development, and UI/UX Design.
                     <br />
                     <br />
                     Honored as one of Gits.id&apos;s &quot;Best Mentees&quot; for dedication to professional growth. Thrives in collaborative environments and is passionate about leveraging technology to create impactful solutions.
