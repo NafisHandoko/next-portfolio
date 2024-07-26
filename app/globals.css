@@ -32,7 +32,7 @@ body {
 }
 
 section {
-  @apply overflow-x-hidden
+  @apply overflow-hidden
 }
 
 .glow:hover {
