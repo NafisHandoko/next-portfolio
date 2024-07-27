@@ -44,7 +44,7 @@ export default function HeroSection() {
                 <MotionDiv
                     variants={fadeInTransition("up", "tween", 0.3, 0.7)}
                 >
-                    <Button type="a" text="Download my resume" href="https://drive.google.com/file/d/1U7lAVcEILBvs4aQZe2mB6-VWkpCzaxCv/view?usp=sharing" />
+                    <Button type="a" text="Look at my resume" href="https://drive.google.com/file/d/1U7lAVcEILBvs4aQZe2mB6-VWkpCzaxCv/view?usp=sharing" />
                 </MotionDiv>
             </div>
         </MotionHeader>
