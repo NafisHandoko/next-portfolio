@@ -16,7 +16,7 @@ export default function TOC({ headings }: { headings: RegExpMatchArray }) {
     }).filter(item => item !== null);
 
     const [activeId, setActiveId] = useState<string>()
-    
+
     useEffect(() => {
         const handleScroll = () => {
             let currentId
@@ -45,7 +45,7 @@ export default function TOC({ headings }: { headings: RegExpMatchArray }) {
             <span className="text-nero font-bold text-xl">Table of Contents</span>
             <div className="flex flex-col gap-3 text-sm">
                 {toc && toc.map((heading, i) =>
-                    <span className={`${heading.title == activeId ? 'text-nero font-semibold' : 'text-jumbo'} ml-${heading.level * 7}`} key={i}>{heading.title}</span>
+                    <a href={`#${heading.title}`} className={`${heading.title == activeId ? 'text-nero font-semibold' : 'text-jumbo'} ml-${heading.level * 7}`} key={i}>{heading.title}</a>
                 )}
             </div>
         </div>
