@@ -7,8 +7,8 @@ import { BsListNested } from "react-icons/bs";
 import { FaDribbble, FaGithub, FaInstagram, FaLinkedin, FaRegEnvelope } from "react-icons/fa6";
 import { GoArrowUp } from "react-icons/go";
 import { IoCloseOutline } from "react-icons/io5";
-import { MotionA, MotionDiv, MotionLi } from "../base/framer";
-import { fadeInTransition } from "@/app/_utils/motion";
+import { MotionA, MotionDiv, MotionLi } from "../wrapper/framer";
+import { fadeInTransition } from "@/app/_utils/transitions";
 
 export default function HeaderSection() {
     const [isScrolled, setIsScrolled] = useState<boolean>(false);

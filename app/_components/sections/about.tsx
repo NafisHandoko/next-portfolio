@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { MotionDiv, MotionH2, MotionP, MotionSection } from "../base/framer";
-import { fadeInTransition, staggeredContainer, textVariantTransition } from "@/app/_utils/motion";
+import { MotionDiv, MotionH2, MotionP, MotionSection } from "../wrapper/framer";
+import { fadeInTransition, staggeredContainer, textVariantTransition } from "@/app/_utils/transitions";
 
 export default function AboutSection() {
     return (

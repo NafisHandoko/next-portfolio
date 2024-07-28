@@ -1,6 +1,6 @@
-import { staggeredContainer, textVariantTransition } from "@/app/_utils/motion";
+import { staggeredContainer, textVariantTransition } from "@/app/_utils/transitions";
 import Button from "../base/button";
-import { MotionDiv, MotionH2, MotionP, MotionSection } from "../base/framer";
+import { MotionDiv, MotionH2, MotionP, MotionSection } from "../wrapper/framer";
 
 export default function ContactSection() {
     return (

@@ -1,10 +1,10 @@
-import CustomMDX from "@/app/_components/base/custom-mdx";
-import { MotionDiv, MotionH1, MotionH2, MotionSpan } from "@/app/_components/base/framer";
+import CustomMDX from "@/app/_components/wrapper/custom-mdx";
+import { MotionDiv, MotionH1, MotionH2, MotionSpan } from "@/app/_components/wrapper/framer";
 import ArticlesCard2 from "@/app/_components/widgets/articles/card2";
 import TOC from "@/app/_components/widgets/articles/toc";
 import getArticle from "@/app/_services/articles/getArticle";
 import getArticles from "@/app/_services/articles/getArticles";
-import { fadeInTransition, staggeredContainer, textVariantTransition } from "@/app/_utils/motion";
+import { fadeInTransition, staggeredContainer, textVariantTransition } from "@/app/_utils/transitions";
 
 export default async function ArticleDetailPage({ params }: { params: { slug: string } }) {
     const articlesData = await getArticles()

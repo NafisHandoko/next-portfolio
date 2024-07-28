@@ -1,8 +1,8 @@
 import { projectsData } from "@/app/_data/projects";
 import ProjectsCard from "../widgets/projects/card";
 import Button from "../base/button";
-import { MotionDiv, MotionH2, MotionSection } from "../base/framer";
-import { fadeInTransition, staggeredContainer, textVariantTransition } from "@/app/_utils/motion";
+import { MotionDiv, MotionH2, MotionSection } from "../wrapper/framer";
+import { fadeInTransition, staggeredContainer, textVariantTransition } from "@/app/_utils/transitions";
 
 export default function ProjectsSection() {
     return (

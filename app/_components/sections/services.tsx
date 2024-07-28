@@ -3,8 +3,8 @@ import { FaFigma, FaLaptopCode, FaLaravel, FaWordpress } from "react-icons/fa6";
 import { MdOutlinePalette } from "react-icons/md";
 import { RiFlutterFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiNextdotjs } from "react-icons/si";
-import { MotionDiv, MotionH2, MotionSection } from "../base/framer";
-import { fadeInTransition, staggeredContainer, textVariantTransition } from "@/app/_utils/motion";
+import { MotionDiv, MotionH2, MotionSection } from "../wrapper/framer";
+import { fadeInTransition, staggeredContainer, textVariantTransition } from "@/app/_utils/transitions";
 
 export default function ServicesSection() {
     return (

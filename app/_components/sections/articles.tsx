@@ -1,6 +1,6 @@
-import { fadeInTransition, staggeredContainer, textVariantTransition } from "@/app/_utils/motion";
+import { fadeInTransition, staggeredContainer, textVariantTransition } from "@/app/_utils/transitions";
 import Button from "../base/button";
-import { MotionDiv, MotionH2, MotionSection } from "../base/framer";
+import { MotionDiv, MotionH2, MotionSection } from "../wrapper/framer";
 import ArticlesCard from "../widgets/articles/card";
 import getArticles from "@/app/_services/articles/getArticles";
 

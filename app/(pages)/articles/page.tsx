@@ -1,7 +1,7 @@
-import { MotionDiv, MotionH2 } from "@/app/_components/base/framer";
+import { MotionDiv, MotionH2 } from "@/app/_components/wrapper/framer";
 import ArticlesCard2 from "@/app/_components/widgets/articles/card2";
 import getArticles from "@/app/_services/articles/getArticles";
-import { fadeInTransition, textVariantTransition } from "@/app/_utils/motion";
+import { fadeInTransition, textVariantTransition } from "@/app/_utils/transitions";
 
 export default async function ArticlesPage() {
     const articlesData = await getArticles()

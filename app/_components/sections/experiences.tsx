@@ -1,7 +1,7 @@
 import { experiencesData } from "@/app/_data/experiences"
 import ExperiencesCard from "../widgets/experiences/card"
-import { MotionH2, MotionSection } from "../base/framer"
-import { staggeredContainer, textVariantTransition } from "@/app/_utils/motion"
+import { MotionH2, MotionSection } from "../wrapper/framer"
+import { staggeredContainer, textVariantTransition } from "@/app/_utils/transitions"
 
 export default function ExperiencesSection() {
     return (

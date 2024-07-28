@@ -1,6 +1,6 @@
-import { fadeInTransition, staggeredContainer } from "@/app/_utils/motion";
+import { fadeInTransition, staggeredContainer } from "@/app/_utils/transitions";
 import Badge from "../../base/badge";
-import { MotionDiv } from "../../base/framer";
+import { MotionDiv } from "../../wrapper/framer";
 import { ExperienceType } from "@/app/_types/experience";
 
 export default function ExperiencesCard({ experience }: { experience: ExperienceType }) {

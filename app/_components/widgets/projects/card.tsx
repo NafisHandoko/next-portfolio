@@ -1,8 +1,8 @@
 import { FaGithub } from "react-icons/fa6";
 import { GoLinkExternal } from "react-icons/go";
 import Badge from "../../base/badge";
-import { MotionDiv } from "../../base/framer";
-import { fadeInTransition, staggeredContainer } from "@/app/_utils/motion";
+import { MotionDiv } from "../../wrapper/framer";
+import { fadeInTransition, staggeredContainer } from "@/app/_utils/transitions";
 import { ProjectType } from "@/app/_types/project";
 
 export default function ProjectsCard({ project }: { project: ProjectType }) {

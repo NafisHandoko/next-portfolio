@@ -1,15 +1,7 @@
 "use client"
 
+import { ButtonPropsType } from "@/app/_types/button";
 import Link from "next/link";
-import { MouseEventHandler } from "react";
-
-interface ButtonPropsType {
-    type: 'Link' | 'a' | 'tab',
-    text: string,
-    href?: string,
-    className?: string,
-    onClick?: MouseEventHandler
-}
 
 export default function Button({ type, text, href = '', className = '', onClick = () => { } }: ButtonPropsType) {
     return type == "Link" ? <Link href={href} className={`text-nero border border-nero hover:bg-nero hover:text-codgray transition-all rounded-md px-8 py-4 ${className}`}>{text}</Link> :

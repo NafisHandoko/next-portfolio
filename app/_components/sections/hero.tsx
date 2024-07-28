@@ -1,8 +1,8 @@
 "use client"
 import { ReactTyped } from "react-typed";
 import Button from "../base/button";
-import { MotionDiv, MotionHeader } from "../base/framer";
-import { fadeInTransition, staggeredContainer } from "@/app/_utils/motion";
+import { MotionDiv, MotionHeader } from "../wrapper/framer";
+import { fadeInTransition, staggeredContainer } from "@/app/_utils/transitions";
 import { useScramble } from "use-scramble";
 
 export default function HeroSection() {

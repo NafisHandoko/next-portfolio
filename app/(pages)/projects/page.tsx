@@ -4,8 +4,8 @@ import { useState } from "react";
 import Button from "../../_components/base/button";
 import ProjectsCard2 from "../../_components/widgets/projects/card2";
 import { projectsData } from "../../_data/projects";
-import { MotionDiv, MotionH2 } from "@/app/_components/base/framer";
-import { fadeInTransition, textVariantTransition } from "@/app/_utils/motion";
+import { MotionDiv, MotionH2 } from "@/app/_components/wrapper/framer";
+import { fadeInTransition, textVariantTransition } from "@/app/_utils/transitions";
 
 const projectCategories = ['All', 'No-Code', 'Web', 'Mobile', 'UI/UX', 'AI']
 
