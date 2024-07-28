@@ -1,6 +1,9 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { MotionGlobalConfig } from "framer-motion"
+
+MotionGlobalConfig.skipAnimations = false
 
 export const {
     div: MotionDiv,
