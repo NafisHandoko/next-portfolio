@@ -1,5 +1,13 @@
 export const projectsData = [
     {
+        name: 'Portfolio Website',
+        description: 'I created this portfolio website to showcase the projects I have worked on along with all my work experience and all my contact information for anyone to reach me. I use Framer Motion to do scroll-linked transitions, react-typed for typing animation, and use-scramble to implement character scramble animation within text. I also used @rena.to/github-blog to turn my github issues into a blog CMS.',
+        techStack: ['Web', 'Next.js', 'Typescript', 'Tailwind CSS', 'Framer Motion', 'Github Blog/CMS'],
+        demoURL: 'https://nafishandoko.vercel.app/',
+        repoURL: 'https://github.com/nafishandoko/next-portfolio',
+        image: '/assets/images/portfolio/portfolio.png'
+    },
+    {
         name: 'Teknik Kimia Universitas Jember',
         description: 'This is a website that contains information about the chemical engineering study program at University of Jember such as contacts, locations, lecturers and alumni, along with the latest student news and activities. I created this website using WordPress and the popular WordPress plugin, Elementor.',
         techStack: ['No-Code', 'Wordpress', 'Elementor'],
