@@ -16,8 +16,8 @@
   }
 } */
 
-html {
-  @apply scroll-smooth
+:root {
+  @apply scroll-smooth scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thin scrollbar-thumb-mineshaft scrollbar-track-transparent;
 }
 
 body {
