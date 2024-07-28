@@ -24,6 +24,14 @@ export const projectsData = [
         image: '/assets/images/portfolio/eduwork.png'
     },
     {
+        name: 'Relazee',
+        description: "Relazee is a website for my ongoing startup, it's a platform to find competition like hackathon and to find a team or partners for the competition. Anyone, such as event/competition organizers, including universities, can post their event information on this platform. College students and their teams can join the event through this platform. This website is still in the early stages of development and is still very far from being finished.",
+        techStack: ['Web', 'Next.js', 'Typescript', 'Tailwind CSS'],
+        demoURL: 'https://relazee-next.vercel.app/',
+        repoURL: 'https://github.com/298ms/relazee-next',
+        image: '/assets/images/portfolio/relazee.png'
+    },
+    {
         name: 'Speedside Landing Page',
         description: 'A landing page that i built for Speedside. Speedside is a small software house company based in Indonesia that offers services such as website development, mobile application development, UI/UX design, and IT consulting.',
         techStack: ['Web', 'Next.js', 'Typescript', 'Tailwind CSS'],
