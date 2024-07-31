@@ -17,6 +17,11 @@ const components = {
             {props.children}
         </h3>
     ),
+    p: (props: PropsWithChildren) => (
+        <p {...props} className="text-silver">
+            {props.children}
+        </p>
+    )
 }
 
 export default function CustomMDX(props: MDXRemoteProps) {
