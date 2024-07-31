@@ -1,8 +1,8 @@
 import { cache } from "react"
-import githubBlogWrapper from "./githubBlogWrapper"
+import githubBlogInstance from "./githubBlogInstance"
 
 const getArticle = cache(async (slug: string) => {
-    const article = await githubBlogWrapper.getPost({
+    const article = await githubBlogInstance.getPost({
         query: {
             search: slug,
         }

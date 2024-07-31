@@ -1,8 +1,8 @@
 import { GithubBlog } from "@rena.to/github-blog";
 
-const githubBlogWrapper = new GithubBlog({
+const githubBlogInstance = new GithubBlog({
     repo: 'NafisHandoko/next-portfolio',
     token: process.env.GITHUB_TOKEN as string,
 })
 
-export default githubBlogWrapper
+export default githubBlogInstance

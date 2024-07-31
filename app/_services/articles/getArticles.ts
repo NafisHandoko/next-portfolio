@@ -1,8 +1,8 @@
 import { cache } from 'react'
-import githubBlogWrapper from "./githubBlogWrapper";
+import githubBlogInstance from "./githubBlogInstance";
 
 const getArticles = cache(async () => {
-    const articles = await githubBlogWrapper.getPosts({
+    const articles = await githubBlogInstance.getPosts({
         query: {
             type: 'article',
             state: 'published',
