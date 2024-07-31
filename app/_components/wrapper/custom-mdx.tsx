@@ -21,6 +21,11 @@ const components = {
         <p {...props} className="text-silver">
             {props.children}
         </p>
+    ),
+    a: (props: PropsWithChildren) => (
+        <a {...props} target="_blank" className="text-blue-400">
+            {props.children}
+        </a>
     )
 }
 
