@@ -23,15 +23,17 @@ export default async function ArticlesSection() {
                 Articles
             </MotionH2>
             <div className="flex flex-col">
-                {articlesData && articlesData.map((article, i) =>
+                {articlesData.length > 0 ? articlesData.map((article, i) =>
                     <MotionDiv key={i} variants={textVariantTransition(i * 0.5)} >
                         <ArticlesCard article={article.post} />
                     </MotionDiv>
-                )}
+                ) : <span className="text-silver">No articles yet. Stay tuned for upcoming articles!</span>}
             </div>
-            <MotionDiv variants={fadeInTransition("up", "tween", 1, 0.7)} className="self-center">
-                <Button type="Link" href="/articles" text="Show more" />
-            </MotionDiv>
+            {articlesData.length > 0 &&
+                <MotionDiv variants={fadeInTransition("up", "tween", 1, 0.7)} className="self-center">
+                    <Button type="Link" href="/articles" text="Show more" />
+                </MotionDiv>
+            }
         </MotionSection>
     )
 }
