@@ -27,7 +27,7 @@ export const projectsData = [
         name: 'Relazee',
         description: "Relazee is a website for my ongoing startup, it's a platform to find competition like hackathon and to find a team or partners for the competition. Anyone, such as event/competition organizers, including universities, can post their event information on this platform. College students and their teams can join the event through this platform. This website is still in the early stages of development and is still very far from being finished.",
         techStack: ['Web', 'Next.js', 'Typescript', 'Tailwind CSS'],
-        demoURL: 'https://relazee-next.vercel.app/',
+        demoURL: 'https://relazee.vercel.app',
         repoURL: 'https://github.com/298ms/relazee-next',
         image: '/assets/images/portfolio/relazee.png'
     },
