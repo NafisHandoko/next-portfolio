@@ -8,12 +8,12 @@ export const projectsData = [
         image: '/assets/images/portfolio/portfolio.png'
     },
     {
-        name: 'Teknik Kimia Universitas Jember',
-        description: 'This is a website that contains information about the chemical engineering study program at University of Jember such as contacts, locations, lecturers and alumni, along with the latest student news and activities. I created this website using WordPress and the popular WordPress plugin, Elementor.',
-        techStack: ['No-Code', 'Wordpress', 'Elementor'],
-        demoURL: 'https://chemeng.teknik.unej.ac.id/',
-        repoURL: '',
-        image: '/assets/images/portfolio/tkimia-unej.png'
+        name: 'Relazee',
+        description: "Relazee is a website for my ongoing startup, it's a platform to find competition like hackathon and to find a team or partners for the competition. Anyone, such as event/competition organizers, including universities, can post their event information on this platform. College students and their teams can join the event through this platform. This website is still in the early stages of development and is still very far from being finished.",
+        techStack: ['Web', 'Next.js', 'Typescript', 'Tailwind CSS', 'React Query', 'Zustand', 'PostgreSQL', 'Supabase', 'BaaS', 'OAuth'],
+        demoURL: 'https://relazee-dev.vercel.app',
+        repoURL: 'https://github.com/298ms/relazee-next',
+        image: '/assets/images/portfolio/relazee.png'
     },
     {
         name: 'Eduwork Sosmed',
@@ -24,12 +24,12 @@ export const projectsData = [
         image: '/assets/images/portfolio/eduwork.png'
     },
     {
-        name: 'Relazee',
-        description: "Relazee is a website for my ongoing startup, it's a platform to find competition like hackathon and to find a team or partners for the competition. Anyone, such as event/competition organizers, including universities, can post their event information on this platform. College students and their teams can join the event through this platform. This website is still in the early stages of development and is still very far from being finished.",
-        techStack: ['Web', 'Next.js', 'Typescript', 'Tailwind CSS', 'React Query', 'PostgreSQL', 'Supabase', 'BaaS', 'OAuth'],
-        demoURL: 'https://relazee-dev.vercel.app',
-        repoURL: 'https://github.com/298ms/relazee-next',
-        image: '/assets/images/portfolio/relazee.png'
+        name: 'Teknik Kimia Universitas Jember',
+        description: 'This is a website that contains information about the chemical engineering study program at University of Jember such as contacts, locations, lecturers and alumni, along with the latest student news and activities. I created this website using WordPress and the popular WordPress plugin, Elementor.',
+        techStack: ['No-Code', 'Wordpress', 'Elementor'],
+        demoURL: 'https://chemeng.teknik.unej.ac.id/',
+        repoURL: '',
+        image: '/assets/images/portfolio/tkimia-unej.png'
     },
     {
         name: 'Speedside Landing Page',
