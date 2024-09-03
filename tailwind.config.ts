@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: 'class',
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,11 +10,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        mineshaft: "#252525",
-        nero: "#FFFFFF",
-        silver: "#BFBFBF",
-        jumbo: "#888889",
-        codgray: "#141414"
+        dark: {
+          mineshaft: "#252525",
+          nero: "#FFFFFF",
+          silver: "#BFBFBF",
+          jumbo: "#888889",
+          codgray: "#141414"
+        },
+        light: {
+          mineshaft: "#E5E5E5",  // Lightened version of #252525
+          nero: "#000000",       // Inverted version of #FFFFFF
+          silver: "#404040",     // Darkened version of #BFBFBF
+          jumbo: "#777777",      // Slightly darkened version of #888889
+          codgray: "#EAEAEA"     // Lightened version of #141414
+        }
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

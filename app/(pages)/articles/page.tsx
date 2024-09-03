@@ -12,7 +12,7 @@ export default async function ArticlesPage() {
                 variants={textVariantTransition(0)}
                 animate="show"
                 initial="hidden"
-                className="uppercase text-nero font-bold text-3xl"
+                className="uppercase text-light-nero dark:text-dark-nero font-bold text-3xl"
             >Articles</MotionH2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 {articlesData && articlesData.map((article, i) =>

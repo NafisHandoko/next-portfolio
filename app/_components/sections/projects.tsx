@@ -14,7 +14,7 @@ export default function ProjectsSection() {
             id="projects"
             className="container mx-auto flex flex-col px-10 md:px-40 py-24 gap-10"
         >
-            <MotionH2 variants={textVariantTransition(0)} className="uppercase text-nero font-bold text-3xl">Featured Projects</MotionH2>
+            <MotionH2 variants={textVariantTransition(0)} className="uppercase text-light-nero dark:text-dark-nero font-bold text-3xl">Featured Projects</MotionH2>
             <div className="flex flex-col">
                 {projectsData && projectsData.slice(0, 4).map((project, index) => <ProjectsCard project={project} key={index} />)}
             </div>

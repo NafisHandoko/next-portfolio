@@ -12,8 +12,8 @@ export default function ContactSection() {
             id="contact"
             className="container mx-auto flex flex-col items-center text-center px-10 md:px-40 py-36 gap-10"
         >
-            <MotionH2 variants={textVariantTransition(0)} className="text-4xl font-bold text-nero">Keep In Touch</MotionH2>
-            <MotionP variants={textVariantTransition(0.2)} className="text-silver w-full md:w-1/2">
+            <MotionH2 variants={textVariantTransition(0)} className="text-4xl font-bold text-light-nero dark:text-dark-nero">Keep In Touch</MotionH2>
+            <MotionP variants={textVariantTransition(0.2)} className="text-light-silver dark:text-dark-silver w-full md:w-1/2">
                 Whether you have an idea for a project or just want to chat, feel free to chat me!
             </MotionP>
             <MotionDiv variants={textVariantTransition(0.4)}>

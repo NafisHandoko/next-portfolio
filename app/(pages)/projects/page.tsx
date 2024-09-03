@@ -21,7 +21,7 @@ export default function ProjectsPage() {
                 variants={textVariantTransition(0)}
                 animate="show"
                 initial="hidden"
-                className="uppercase text-nero font-bold text-3xl"
+                className="uppercase text-light-nero dark:text-dark-nero font-bold text-3xl"
             >
                 Projects
             </MotionH2>
@@ -33,7 +33,7 @@ export default function ProjectsPage() {
                         initial="hidden"
                         animate="show"
                     >
-                        <Button type="tab" text={category} className={selectedCategory == category ? '!bg-nero !text-codgray' : ''} onClick={() => setSelectedCategory(category)} />
+                        <Button type="tab" text={category} className={selectedCategory == category ? '!bg-light-nero dark:bg-dark-nero !text-light-codgray !dark:text-dark-codgray' : ''} onClick={() => setSelectedCategory(category)} />
                     </MotionDiv>
                 )}
             </div>

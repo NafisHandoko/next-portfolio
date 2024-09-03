@@ -4,6 +4,7 @@ import "./globals.css";
 import HeaderSection from "./_components/sections/header";
 import FooterSection from "./_components/sections/footer";
 import { Analytics } from "@vercel/analytics/react"
+import { ThemeWrapper } from "./_components/wrapper/theme-wrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,12 +19,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} min-h-screen flex flex-col`}>
-        <HeaderSection />
-        {children}
-        <FooterSection />
-        <Analytics />
+        <ThemeWrapper>
+          <HeaderSection />
+          {children}
+          <FooterSection />
+          <Analytics />
+        </ThemeWrapper>
       </body>
     </html>
   );

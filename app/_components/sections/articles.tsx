@@ -18,7 +18,7 @@ export default async function ArticlesSection() {
         >
             <MotionH2
                 variants={textVariantTransition(0)}
-                className="uppercase text-nero font-bold text-3xl"
+                className="uppercase text-light-nero dark:text-dark-nero font-bold text-3xl"
             >
                 Articles
             </MotionH2>
@@ -27,7 +27,7 @@ export default async function ArticlesSection() {
                     <MotionDiv key={i} variants={textVariantTransition(i * 0.5)} >
                         <ArticlesCard article={article.post} />
                     </MotionDiv>
-                ) : <span className="text-silver">No articles yet. Stay tuned for upcoming articles!</span>}
+                ) : <span className="text-light-silver dark:text-dark-silver">No articles yet. Stay tuned for upcoming articles!</span>}
             </div>
             {articlesData.length > 0 &&
                 <MotionDiv variants={fadeInTransition("up", "tween", 1, 0.7)} className="self-center">

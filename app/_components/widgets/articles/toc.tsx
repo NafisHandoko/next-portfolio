@@ -42,10 +42,10 @@ export default function TOC({ headings }: { headings: RegExpMatchArray }) {
 
     return (
         <div className="flex flex-col gap-4">
-            <span className="text-nero font-bold text-xl">Table of Contents</span>
+            <span className="text-light-nero dark:text-dark-nero font-bold text-xl">Table of Contents</span>
             <div className="flex flex-col gap-3 text-sm">
                 {toc && toc.map((heading, i) =>
-                    <a href={`#${heading.title}`} className={`${heading.title == activeId ? 'text-nero font-semibold' : 'text-jumbo'} ml-${heading.level * 7}`} key={i}>{heading.title}</a>
+                    <a href={`#${heading.title}`} className={`${heading.title == activeId ? 'text-light-nero dark:text-dark-nero font-semibold' : 'text-light-jumbo dark:text-dark-jumbo'} ml-${heading.level * 7}`} key={i}>{heading.title}</a>
                 )}
             </div>
         </div>

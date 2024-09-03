@@ -15,7 +15,7 @@ export default function ExperiencesSection() {
         >
             <MotionH2
                 variants={textVariantTransition(0)}
-                className="uppercase text-nero font-bold text-3xl"
+                className="uppercase text-light-nero dark:text-dark-nero font-bold text-3xl"
             >
                 Work Experiences
             </MotionH2>
