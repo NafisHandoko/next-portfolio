@@ -26,7 +26,17 @@ const components = {
         <a {...props} target="_blank" className="text-blue-400">
             {props.children}
         </a>
-    )
+    ),
+    ol: (props: PropsWithChildren) => (
+        <ol {...props} className="list-decimal list-inside space-y-1">
+            {props.children}
+        </ol>
+    ),
+    ul: (props: PropsWithChildren) => (
+        <ol {...props} className="list-disc list-inside space-y-1">
+            {props.children}
+        </ol>
+    ),
 }
 
 export default function CustomMDX(props: MDXRemoteProps) {
