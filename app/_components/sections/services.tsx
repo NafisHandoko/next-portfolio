@@ -1,5 +1,5 @@
 import { BsPhone } from "react-icons/bs";
-import { FaFigma, FaLaptopCode, FaLaravel, FaWordpress } from "react-icons/fa6";
+import { FaFigma, FaLaptopCode, FaLaravel, FaReact, FaWordpress } from "react-icons/fa6";
 import { MdOutlinePalette } from "react-icons/md";
 import { RiFlutterFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiNextdotjs } from "react-icons/si";
@@ -26,6 +26,7 @@ export default function ServicesSection() {
                     </div>
                     <div className="flex flex-row items-center p-7 gap-3 text-light-nero dark:text-dark-nero bg-light-codgray dark:bg-dark-codgray rounded-b-md mt-auto">
                         <SiNextdotjs size={"25px"} />
+                        <FaReact size={"25px"} />
                         <RiTailwindCssFill size={"25px"} />
                         <FaLaravel size={"25px"} />
                         <FaWordpress size={"25px"} />
