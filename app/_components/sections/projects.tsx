@@ -16,7 +16,7 @@ export default function ProjectsSection() {
         >
             <MotionH2 variants={textVariantTransition(0)} className="uppercase text-nero font-bold text-3xl">Featured Projects</MotionH2>
             <div className="flex flex-col">
-                {projectsData && projectsData.slice(0, 3).map((project, index) => <ProjectsCard project={project} key={index} />)}
+                {projectsData && projectsData.slice(0, 4).map((project, index) => <ProjectsCard project={project} key={index} />)}
             </div>
             <MotionDiv variants={fadeInTransition("up", "tween", 1.6, 0.7)} className="self-center">
                 <Button type="Link" href="/projects" text="Show more" />
