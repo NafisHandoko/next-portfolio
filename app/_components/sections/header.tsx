@@ -57,7 +57,7 @@ export default function HeaderSection() {
                 <MotionA initial="hidden" animate="show" variants={fadeInTransition("left", "tween", 0.2, 0.2)} className="glow transition-all" target="_blank" href="https://dribbble.com/nafishandoko"><FaDribbble size={"17px"} /></MotionA>
             </div>
             <nav
-                className={`${showMobileNav ? 'left-[0] md:left-[100%]' : 'left-[100%]'} bg-light-nero dark:bg-dark-nero text-light-mineshaft dark:text-dark-mineshaft text-center fixed z-20 top-0 left-[100%] transition-all w-full h-screen flex flex-col gap-10 items-center justify-center`}>
+                className={`${showMobileNav ? 'left-[0] md:left-[100%]' : 'left-[100%]'} bg-light-nero dark:bg-dark-nero text-light-mineshaft dark:text-dark-mineshaft text-center fixed z-20 top-0 transition-all w-full h-screen flex flex-col gap-10 items-center justify-center`}>
                 <button onClick={() => setShowMobileNav(false)} className='text-3xl block md:hidden py-5 absolute top-4 right-6'><IoCloseOutline size={'40px'} /></button >
                 <ul className='container mx-auto flex flex-col items-center justify-between gap-7'>
                     <li className='text-xl font-medium'><Link href="/">Home</Link></li>
