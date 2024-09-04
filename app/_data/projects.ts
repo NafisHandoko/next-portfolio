@@ -18,7 +18,7 @@ export const projectsData = [
     {
         name: 'Eduwork Sosmed',
         description: "Eduwork Sosmed is a website I worked on during my internship at Eduwork.id. This website is used to build a community and promote Eduwork's latest products. On this website users can explore webinars, courses, and mentors available at Eduwork.",
-        techStack: ['Web', 'ReactJS', 'Typescript', 'Redux', 'Tailwind CSS', 'React Native', 'Alpine.js', 'Laravel'],
+        techStack: ['Web', 'ReactJS', 'Tailwind CSS', 'React Native', 'Alpine.js', 'Laravel'],
         demoURL: 'https://sosmed.edudev.xyz/',
         repoURL: '',
         image: '/assets/images/portfolio/eduwork.png'
