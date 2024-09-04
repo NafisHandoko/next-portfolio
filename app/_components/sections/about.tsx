@@ -33,7 +33,7 @@ export default function AboutSection() {
                     23 y.o., Indonesia 🇮🇩
                     <br />
                     <br />
-                    I am a Junior Software Engineer with expertise in React, Typescript, and Tailwind CSS. Have several internship experience at prominent Indonesian companies, including Eduwork, Gits.id, and Bisa AI.
+                    I am a Junior Software Engineer with expertise in React, Next.js, Typescript, and Tailwind CSS. Have several internship experience at prominent Indonesian companies, including Eduwork, Gits.id, and Bisa AI.
                     <br />
                     <br />
                     Honored as one of Gits.id&apos;s &quot;Best Mentees&quot; for dedication to professional growth. Thrives in collaborative environments and is passionate about leveraging technology to create impactful solutions. Dedicated to build clean-code web-based products with readability, maintainability, and scalability principles.

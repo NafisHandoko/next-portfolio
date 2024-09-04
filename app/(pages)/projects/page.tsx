@@ -33,7 +33,7 @@ export default function ProjectsPage() {
                         initial="hidden"
                         animate="show"
                     >
-                        <Button type="tab" text={category} className={selectedCategory == category ? '!bg-light-nero dark:bg-dark-nero !text-light-codgray !dark:text-dark-codgray' : ''} onClick={() => setSelectedCategory(category)} />
+                        <Button type="tab" text={category} className={selectedCategory == category ? '!bg-light-nero !dark:bg-dark-nero !text-light-codgray !dark:text-dark-codgray' : ''} onClick={() => setSelectedCategory(category)} />
                     </MotionDiv>
                 )}
             </div>
