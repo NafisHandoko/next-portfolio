@@ -4,5 +4,7 @@ export interface ProjectType {
     techStack: string[];
     demoURL: string;
     repoURL: string;
+    figmaURL: string,
+    dribbbleURL: string,
     image: string;
 }

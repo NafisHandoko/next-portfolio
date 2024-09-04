@@ -1,4 +1,4 @@
-import { FaGithub } from "react-icons/fa6";
+import { FaDribbble, FaFigma, FaGithub } from "react-icons/fa6";
 import { GoLinkExternal } from "react-icons/go";
 import Badge from "../../base/badge";
 import { ProjectType } from "@/app/_types/project";
@@ -16,6 +16,8 @@ export default function ProjectsCard2({ project }: { project: ProjectType }) {
                 <div className="flex flex-row items-center gap-3 text-light-nero dark:text-dark-nero mt-auto">
                     {project.demoURL != '' && <a href={project.demoURL} target="_blank" rel="noopener noreferrer"><GoLinkExternal size={"20px"} /></a>}
                     {project.repoURL != '' && <a href={project.repoURL} target="_blank" rel="noopener noreferrer"><FaGithub size={"20px"} /></a>}
+                    {project.dribbbleURL != '' && <a href={project.dribbbleURL} target="_blank" rel="noopener noreferrer"><FaDribbble size={"20px"} /></a>}
+                    {project.figmaURL != '' && <a href={project.figmaURL} target="_blank" rel="noopener noreferrer"><FaFigma size={"20px"} /></a>}
                 </div>
             </div>
         </div>
