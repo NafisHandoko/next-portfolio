@@ -9,10 +9,10 @@ export const projectsData = [
     },
     {
         name: 'Relazee',
-        description: "Relazee is a website for my ongoing startup, it's a platform to find competition like hackathon and to find a team or partners for the competition. Anyone, such as event/competition organizers, including universities, can post their event information on this platform. College students and their teams can join the event through this platform. This website is still in the early stages of development and is still very far from being finished.",
+        description: "Relazee is a website for my ongoing startup, it's a social media platform focused on college students that allows users to find partners or friends and discover various events across universities. Anyone, such as event/competition organizers, including universities, can post their event information on this platform. College students and their teams can join the event through this platform. This website is still in the early stages of development and is still very far from being finished.",
         techStack: ['Web', 'Next.js', 'Typescript', 'Tailwind CSS', 'React Query', 'Zustand', 'PostgreSQL', 'Supabase', 'BaaS', 'OAuth'],
         demoURL: 'https://relazee-dev.vercel.app',
-        repoURL: 'https://github.com/298ms/relazee-next',
+        repoURL: 'https://github.com/NafisHandoko/relazee-next2/tree/dev',
         image: '/assets/images/portfolio/relazee.png'
     },
     {
