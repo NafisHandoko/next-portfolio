@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { MotionDiv, MotionH2, MotionP, MotionSection } from "../wrapper/framer";
 import { fadeInTransition, staggeredContainer, textVariantTransition } from "@/app/_utils/transitions";
+import TextLink from "../base/text-link";
 
 export default function AboutSection() {
     return (
@@ -18,14 +19,6 @@ export default function AboutSection() {
             >
                 <MotionH2 variants={textVariantTransition(0.3)} className="uppercase text-light-nero dark:text-dark-nero font-bold text-3xl">About Me</MotionH2>
                 <MotionP variants={textVariantTransition(0.4)} className="text-light-silver dark:text-dark-silver">
-                    {/* I&apos;m a Computer Science student specializing in Information
-                    Technology at the University of Jember.
-                    <br />
-                    <br />
-                    I&apos;m passionate about technology, particularly software development and UI design. I have experience with JavaScript, Laravel, Flask, and Flutter. I completed a five-month internship as a Web Programmer at PT Bisa Artifisial Indonesia, where I used ReactJS and Tailwind CSS to create websites.
-                    <br />
-                    <br />
-                    I also interned for five months as a Software Engineer at PT GITS Indonesia, where I worked on Unit Testing for MyPertamina project using Jest and Vue Test Utils. I also handled frontend development for the POC Prodia-LIS project using Syncfusion React Spreadsheet library and collaborated on the frontend of the Carteapp project based on Figma UI Design. */}
                     Hello there!
                     <br />
                     I&apos;m Nafis Arinda Rizky Putra Handoko
@@ -33,10 +26,13 @@ export default function AboutSection() {
                     23 y.o., Indonesia 🇮🇩
                     <br />
                     <br />
-                    I am a Junior Software Engineer with expertise in React, Next.js, Typescript, and Tailwind CSS. Have several internship experience at prominent Indonesian companies, including Eduwork, Gits.id, and Bisa AI.
+                    I am a Junior Software Engineer with expertise in <TextLink url="https://react.dev/">React</TextLink>, <TextLink url="https://nextjs.org/">Next.js</TextLink>, <TextLink url="https://www.typescriptlang.org/">TypeScript</TextLink>, and <TextLink url="https://tailwindcss.com/">Tailwind CSS</TextLink>. Recently, I have also been actively using <TextLink url="https://supabase.com/">Supabase</TextLink> which allows me to build scalable web-based products in a serverless environment.
                     <br />
                     <br />
-                    Honored as one of Gits.id&apos;s &quot;Best Mentees&quot; for dedication to professional growth. Thrives in collaborative environments and is passionate about leveraging technology to create impactful solutions. Dedicated to build clean-code web-based products with readability, maintainability, and scalability principles.
+                    I also have several internship experience at some Indonesian companies (software house and startups), including <TextLink url="https://gits.id/">Gits.id</TextLink>, <TextLink url="https://eduwork.id/">Eduwork.id</TextLink>, and <TextLink url="https://bisa.ai/">Bisa.ai</TextLink>.
+                    <br />
+                    <br />
+                    Honored as one of Gits.id&apos;s &quot;Best Mentees&quot; for dedication to professional growth. I&apos;m really passionate about technology and dedicated to build clean-code web-based products with readability, maintainability, and scalability principles.
                 </MotionP>
             </MotionDiv>
             <MotionDiv
