@@ -14,11 +14,16 @@ export default function ProjectsSection() {
             id="projects"
             className="container mx-auto flex flex-col px-10 md:px-40 py-24 gap-10"
         >
-            <MotionH2 variants={textVariantTransition(0)} className="uppercase text-light-nero dark:text-dark-nero font-bold text-3xl">Featured Projects</MotionH2>
+            <MotionH2 whileInView="show" initial="hidden" variants={textVariantTransition(0)} className="uppercase text-light-nero dark:text-dark-nero font-bold text-3xl">Featured Projects</MotionH2>
             <div className="flex flex-col">
                 {projectsData && projectsData.slice(0, 4).map((project, index) => <ProjectsCard project={project} key={index} />)}
             </div>
-            <MotionDiv variants={fadeInTransition("up", "tween", 1.6, 0.7)} className="self-center">
+            <MotionDiv
+                variants={fadeInTransition("up", "tween", 0, 0.7)}
+                className="self-center"
+                whileInView="show"
+                initial="hidden"
+            >
                 <Button type="Link" href="/projects" text="Show more" />
             </MotionDiv>
         </MotionSection>
