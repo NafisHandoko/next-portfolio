@@ -1,7 +1,7 @@
 import { BsPhone } from "react-icons/bs";
 import { FaFigma, FaLaptopCode, FaLaravel, FaReact, FaWordpress } from "react-icons/fa6";
 import { MdOutlinePalette } from "react-icons/md";
-import { RiFlutterFill, RiTailwindCssFill } from "react-icons/ri";
+import { RiFlutterFill, RiSupabaseFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiNextdotjs } from "react-icons/si";
 import { MotionDiv, MotionH2, MotionSection } from "../wrapper/framer";
 import { fadeInTransition, staggeredContainer, textVariantTransition } from "@/app/_utils/transitions";
@@ -28,6 +28,7 @@ export default function ServicesSection() {
                         <SiNextdotjs size={"25px"} />
                         <FaReact size={"25px"} />
                         <RiTailwindCssFill size={"25px"} />
+                        <RiSupabaseFill size={"25px"} />
                         <FaLaravel size={"25px"} />
                         <FaWordpress size={"25px"} />
                     </div>
