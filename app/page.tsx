@@ -6,7 +6,7 @@ import AboutSection from "./_components/sections/about";
 import ExperiencesSection from "./_components/sections/experiences";
 import ServicesSection from "./_components/sections/services";
 import ProjectsSection from "./_components/sections/projects";
-import ArticlesSection from "./_components/sections/articles";
+// import ArticlesSection from "./_components/sections/articles";
 import ContactSection from "./_components/sections/contact";
 
 export default function Home() {
