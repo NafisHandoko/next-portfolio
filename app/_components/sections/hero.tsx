@@ -31,7 +31,7 @@ export default function HeroSection() {
                     <span className="text-light-silver dark:text-dark-silver">Hi! i am</span>
                     <h1 className="font-bold text-4xl uppercase tracking-widest" ref={ref} onMouseOver={replay}>Nafis Handoko</h1>
                     <p className="text-light-silver dark:text-dark-silver">
-                        A self-taught&nbsp;
+                        I am a&nbsp;
                         <ReactTyped
                             strings={['Software Engineer', 'Web Developer', 'Mobile Developer', 'UI/UX Designer']}
                             typeSpeed={60}

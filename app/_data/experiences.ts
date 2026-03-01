@@ -1,5 +1,14 @@
 export const experiencesData = [
     {
+        periode: 'October 2024 - Present',
+        position: 'Junior Software Engineer',
+        companyName: 'eHealth.co.id',
+        companyURL: 'https://ehealth.co.id',
+        type: 'Fulltime',
+        description: 'Built customer-requested features such as invoice, prescription, inpatient, and midwife record modules, including SATUSEHAT integration. Handled customer issues, conducted training for clinics and doctors, wrote unit tests, fixed bugs, and implemented pull request metrics to improve team productivity.',
+        techStack: ['Odoo', 'Python', 'Typescript', 'Kotlin', 'Docker', 'Kubernetes', 'Terraform']
+    },
+    {
         periode: 'February 2024',
         position: 'Wordpress Developer',
         companyName: 'University of Jember',
