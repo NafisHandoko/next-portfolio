@@ -31,7 +31,7 @@ export default function HeroSection() {
                     <span className="text-light-silver dark:text-dark-silver">Hi! i am</span>
                     <h1 className="font-bold text-4xl uppercase tracking-widest" ref={ref} onMouseOver={replay}>Nafis Handoko</h1>
                     <p className="text-light-silver dark:text-dark-silver">
-                        A self-taught&nbsp;
+                        I am a&nbsp;
                         <ReactTyped
                             strings={['Software Engineer', 'Web Developer', 'Mobile Developer', 'UI/UX Designer']}
                             typeSpeed={60}
@@ -44,7 +44,7 @@ export default function HeroSection() {
                 <MotionDiv
                     variants={fadeInTransition("up", "tween", 0.3, 0.7)}
                 >
-                    <Button type="a" text="Look at my resume" href="https://drive.google.com/file/d/1U7lAVcEILBvs4aQZe2mB6-VWkpCzaxCv/view?usp=sharing" />
+                    <Button type="a" text="Look at my resume" href="https://s.id/nafis-cv-v2" />
                 </MotionDiv>
             </div>
         </MotionHeader>

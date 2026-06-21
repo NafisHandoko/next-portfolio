@@ -1,12 +1,12 @@
 export const experiencesData = [
     {
-        periode: 'February 2024',
-        position: 'Wordpress Developer',
-        companyName: 'University of Jember',
-        companyURL: 'https://unej.ac.id',
-        type: 'Freelance',
-        description: 'Responsible for helping a client to build a website using WordPress to display information and the latest news about the Chemical Engineering program at the University of Jember.',
-        techStack: ['Wordpress', 'Elementor']
+        periode: 'October 2024 - Present',
+        position: 'Junior Software Engineer',
+        companyName: 'eHealth.co.id',
+        companyURL: 'https://ehealth.co.id',
+        type: 'Fulltime',
+        description: 'Built customer-requested features such as invoice, prescription, inpatient, and midwife record modules, including SATUSEHAT integration. Handled customer issues, conducted training for clinics and doctors, wrote unit tests, fixed bugs, and implemented pull request metrics to improve team productivity.',
+        techStack: ['Odoo', 'Python', 'Typescript', 'Kotlin', 'Docker', 'Kubernetes', 'Terraform']
     },
     {
         periode: 'Sep - Dec 2023',
