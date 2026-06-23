@@ -1,5 +1,15 @@
 export const projectsData = [
     {
+        name: 'Metro Apparel Website',
+        description: 'This is a website i developed for Metro Apparel using a fullstack approach with Next.js and MedusaJS. The project includes building a modern storefront, product and variant management through an admin dashboard, custom product option handling, and production deployment using Docker, PostgreSQL, and Traefik on a VPS environment. I also handled domain configuration, SSL setup, deployment, and handover documentation to ensure the website was ready for non-technical client operations.',
+        techStack: ['Web', 'UI/UX', 'Next.js', 'Typescript', 'Tailwind CSS', 'Framer Motion', 'Medusajs', 'Traefik', 'PostgreSQL', 'Docker'],
+        demoURL: 'https://metroapparel.web.id',
+        repoURL: 'https://github.com/NafisHandoko/metroapparel',
+        figmaURL: "",
+        dribbbleURL: '',
+        image: '/assets/images/portfolio/metroapparel.png'
+    },
+    {
         name: 'Portfolio Website',
         description: 'I created this portfolio website to showcase the projects I have worked on along with all my work experience and all my contact information for anyone to reach me. I use Framer Motion to do scroll-linked transitions, react-typed for typing animation, and use-scramble to implement character scramble animation within text. I also used @rena.to/github-blog to turn my github issues into a blog CMS.',
         techStack: ['Web', 'UI/UX', 'Next.js', 'Typescript', 'Tailwind CSS', 'Framer Motion', 'Github Blog/CMS'],
