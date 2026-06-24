@@ -23,16 +23,16 @@ export default function AboutSection() {
                     <br />
                     I&apos;m Nafis Arinda Rizky Putra Handoko
                     <br />
-                    23 y.o., Indonesia 🇮🇩
+                    Software Engineer from Indonesia 🇮🇩
                     <br />
                     <br />
-                    I am a Junior Software Engineer with expertise in <TextLink url="https://react.dev/">React</TextLink>, <TextLink url="https://nextjs.org/">Next.js</TextLink>, <TextLink url="https://www.typescriptlang.org/">TypeScript</TextLink>, and <TextLink url="https://tailwindcss.com/">Tailwind CSS</TextLink>. Recently, I have also been actively using <TextLink url="https://supabase.com/">Supabase</TextLink> which allows me to build scalable web-based products in a serverless environment.
+                    I am a Software Engineer with experience building and maintaining production systems, particularly in the healthcare and ERP domain. Currently, I work on developing and customizing healthcare solutions using <TextLink url="https://lit.dev/">Typescript (Lit/Polymer)</TextLink>, <TextLink url="https://www.odoo.com/">Python (Odoo)</TextLink>, and <TextLink url="https://spring.io/">Kotlin (Spring)</TextLink>, including building features, system integrations, and improving application reliability.
                     <br />
                     <br />
-                    I also have several internship experience at some Indonesian companies (software house and startups), including <TextLink url="https://gits.id/">Gits.id</TextLink>, <TextLink url="https://eduwork.id/">Eduwork.id</TextLink>, and <TextLink url="https://bisa.ai/">Bisa.ai</TextLink>.
+                    Previously, I gained experience developing web applications through internships and personal projects using <TextLink url="https://react.dev/">React</TextLink>, <TextLink url="https://nextjs.org/">Next.js</TextLink>, <TextLink url="https://www.typescriptlang.org/">TypeScript</TextLink>, and <TextLink url="https://tailwindcss.com/">Tailwind CSS</TextLink>. I enjoy building clean, maintainable, and scalable products while continuously improving my engineering skills.
                     <br />
                     <br />
-                    Honored as one of Gits.id&apos;s &quot;Best Mentees&quot; for dedication to professional growth. I&apos;m really passionate about technology and dedicated to build clean-code web-based products with readability, maintainability, and scalability principles.
+                    I am passionate about solving real-world problems through technology, learning new tools, and creating software that provides meaningful impact for users.
                 </MotionP>
             </MotionDiv>
             <MotionDiv
