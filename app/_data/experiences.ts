@@ -6,7 +6,7 @@ export const experiencesData = [
         companyURL: 'https://ehealth.co.id',
         type: 'Fulltime',
         description: 'Built customer-requested features such as invoice, prescription, inpatient, and midwife record modules, including SATUSEHAT integration. Handled customer issues, conducted training for clinics and doctors, wrote unit tests, fixed bugs, and implemented pull request metrics to improve team productivity.',
-        techStack: ['Odoo', 'Python', 'Typescript', 'Kotlin', 'Docker', 'Kubernetes', 'Terraform']
+        techStack: ['HL7 FHIR', 'Odoo', 'Python', 'Typescript', 'Kotlin', 'Docker', 'Kubernetes']
     },
     {
         periode: 'Sep - Dec 2023',
