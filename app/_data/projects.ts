@@ -1,5 +1,15 @@
 export const projectsData = [
     {
+        name: 'FHIR Migration Studio',
+        description: 'FHIR Migration Studio is a desktop application built with React, TypeScript, and Tauri to migrate healthcare data between FHIR servers. It supports dependency-aware migration, automatic reference remapping, configurable transaction bundle optimization, and migration cleanup using FHIR Transaction Bundles. The application was designed to reliably migrate large datasets while preserving referential integrity, handling complex resource dependencies, and providing detailed progress tracking and logging.',
+        techStack: ['Desktop', 'React', 'Typescript', 'Tailwind CSS', 'Tauri', 'Zustand', 'React Query', 'HL7 FHIR'],
+        demoURL: '',
+        repoURL: 'https://github.com/NafisHandoko/fhir-migration-studio',
+        figmaURL: "",
+        dribbbleURL: '',
+        image: '/assets/images/portfolio/fhir-migration-studio.png'
+    },
+    {
         name: 'Metro Apparel Website',
         description: 'This is a website i developed for Metro Apparel using a fullstack approach with Next.js and MedusaJS. The project includes building a modern storefront, product and variant management through an admin dashboard, custom product option handling, and production deployment using Docker, PostgreSQL, and Traefik on a VPS environment. I also handled domain configuration, SSL setup, deployment, and handover documentation to ensure the website was ready for non-technical client operations.',
         techStack: ['Web', 'UI/UX', 'Next.js', 'Typescript', 'Tailwind CSS', 'Framer Motion', 'Medusajs', 'Traefik', 'PostgreSQL', 'Docker'],
