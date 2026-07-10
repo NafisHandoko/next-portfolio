@@ -1,5 +1,5 @@
 version: "3.9"
-
+name: portfolio
 services:
   nextjs:
     build:
@@ -15,12 +15,12 @@ services:
       - "traefik.enable=true"
 
       # Router domain Next.js
-      - "traefik.http.routers.nextjs.rule=Host(`nafishandoko.my.id`)"
-      - "traefik.http.routers.nextjs.entrypoints=websecure"
-      - "traefik.http.routers.nextjs.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.portfolio.rule=Host(`nafishandoko.my.id`)"
+      - "traefik.http.routers.portfolio.entrypoints=websecure"
+      - "traefik.http.routers.portfolio.tls.certresolver=letsencrypt"
 
       # Port Next.js internal
-      - "traefik.http.services.nextjs.loadbalancer.server.port=3000"
+      - "traefik.http.services.portfolio.loadbalancer.server.port=3000"
 
     networks:
       - traefik_network
