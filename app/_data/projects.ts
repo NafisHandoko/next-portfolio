@@ -1,5 +1,15 @@
 export const projectsData = [
     {
+        name: 'Lingkuptani',
+        description: 'LingkupTani is a mobile-first web application built with Next.js, Leaflet, and Supabase to connect local farmers directly with nearby buyers. The project features interactive map searches, real-time demand lists, price negotiation tools, and location-based autocomplete for easy sign-up. On the backend, I developed API routes, configured database functions, triggers, and Row Level Security (RLS) policies in Supabase, and built an automated Docker deployment pipeline to a VPS via GitHub Actions.',
+        techStack: ['Next.js', 'OpenStreetMap', 'Leafletjs', 'Supabase', 'Geoapify', 'Tanstack Query', 'Hackathon'],
+        demoURL: 'https://lingkuptani.my.id',
+        repoURL: 'https://github.com/NafisHandoko/lingkuptani',
+        figmaURL: "",
+        dribbbleURL: '',
+        image: '/assets/images/portfolio/lingkuptani.png'
+    },
+    {
         name: 'FHIR Migration Studio',
         description: 'FHIR Migration Studio is a desktop application built with React, TypeScript, and Tauri to migrate healthcare data between FHIR servers. It supports dependency-aware migration, automatic reference remapping, configurable transaction bundle optimization, and migration cleanup using FHIR Transaction Bundles. The application was designed to reliably migrate large datasets while preserving referential integrity, handling complex resource dependencies, and providing detailed progress tracking and logging.',
         techStack: ['Desktop', 'React', 'Typescript', 'Tailwind CSS', 'Tauri', 'Zustand', 'React Query', 'HL7 FHIR'],
