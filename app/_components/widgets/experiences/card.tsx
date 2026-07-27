@@ -1,6 +1,6 @@
 "use client";
 import { fadeInTransition } from "@/app/_utils/transitions";
-import { MotionDiv } from "../wrapper/framer";
+import { MotionDiv } from "../../wrapper/framer";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { HiOutlineBriefcase } from "react-icons/hi2";
 import { ExperienceType } from "@/app/_types/experience";
