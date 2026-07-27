@@ -1,51 +1,83 @@
+"use client";
 import Image from "next/image";
-import { MotionDiv, MotionH2, MotionP, MotionSection } from "../wrapper/framer";
+import { MotionDiv, MotionH2, MotionSection } from "../wrapper/framer";
 import { fadeInTransition, staggeredContainer, textVariantTransition } from "@/app/_utils/transitions";
 import TextLink from "../base/text-link";
 
 export default function AboutSection() {
-    return (
-        <MotionSection
-            variants={staggeredContainer(0.1, 0.1)}
-            viewport={{ once: true, amount: 0.25 }}
-            initial="hidden"
-            whileInView="show"
-            id="about"
-            className="container mx-auto flex flex-col gap-7 md:gap-0 md:flex-row px-10 md:px-40 py-24"
-        >
-            <MotionDiv
-                variants={fadeInTransition("right", "tween", 0.1, 1.1)}
-                className="w-full md:w-1/2 flex flex-col gap-10"
-            >
-                <MotionH2 variants={textVariantTransition(0.3)} className="uppercase text-light-nero dark:text-dark-nero font-bold text-3xl">About Me</MotionH2>
-                <MotionP variants={textVariantTransition(0.4)} className="text-light-silver dark:text-dark-silver">
-                    Hello there!
-                    <br />
-                    I&apos;m Nafis Arinda Rizky Putra Handoko
-                    <br />
-                    Software Engineer from Indonesia 🇮🇩
-                    <br />
-                    <br />
-                    I am a Software Engineer with experience building and maintaining production systems, particularly in the healthcare and ERP domain. Currently, I work on developing and customizing healthcare solutions using <TextLink url="https://fhir.org/">HL7 FHIR</TextLink>, <TextLink url="https://www.odoo.com/">Python (Odoo)</TextLink>, <TextLink url="https://lit.dev/">Typescript (Lit/Polymer)</TextLink>, and <TextLink url="https://spring.io/">Kotlin (Spring)</TextLink>, including building features, system integrations, and improving application reliability.
-                    <br />
-                    <br />
-                    Previously, I gained experience developing web applications through internships and personal projects using <TextLink url="https://react.dev/">React</TextLink>, <TextLink url="https://nextjs.org/">Next.js</TextLink>, <TextLink url="https://www.typescriptlang.org/">TypeScript</TextLink>, and <TextLink url="https://tailwindcss.com/">Tailwind CSS</TextLink>. I enjoy building clean, maintainable, and scalable products while continuously improving my engineering skills.
-                    <br />
-                    <br />
-                    I am passionate about solving real-world problems through technology, learning new tools, and creating software that provides meaningful impact for users.
-                </MotionP>
-            </MotionDiv>
-            <MotionDiv
-                variants={fadeInTransition("left", "tween", 0.1, 1.1)}
-                className="w-full md:w-1/2 flex items-center justify-center md:justify-end"
-            >
-                <Image
-                    src="/assets/images/about-me.png"
-                    alt="about me picture"
-                    width={325.9}
-                    height={469}
-                />
-            </MotionDiv>
-        </MotionSection>
-    )
+  return (
+    <MotionSection
+      variants={staggeredContainer(0.1, 0.1)}
+      viewport={{ once: true, amount: 0.25 }}
+      initial="hidden"
+      whileInView="show"
+      id="about"
+      className="py-24"
+    >
+      <div className="container-tight">
+        <MotionDiv variants={textVariantTransition(0)} className="text-center mb-16">
+          <span className="badge mb-4 inline-block">About Me</span>
+          <MotionH2 className="text-3xl sm:text-4xl font-bold text-dark-text mt-4">
+            Get to know me
+          </MotionH2>
+        </MotionDiv>
+
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+          <MotionDiv
+            variants={fadeInTransition("right", "tween", 0.1, 0.8)}
+            className="w-full lg:w-1/2 flex justify-center lg:justify-end"
+          >
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent-purple/20 to-accent-cyan/20 rounded-2xl blur-xl" />
+              <Image
+                src="/assets/images/about-me.png"
+                alt="Nafis Handoko"
+                width={326}
+                height={469}
+                className="relative rounded-2xl border border-dark-border/50"
+              />
+            </div>
+          </MotionDiv>
+
+          <MotionDiv
+            variants={fadeInTransition("left", "tween", 0.1, 0.8)}
+            className="w-full lg:w-1/2 flex flex-col gap-6"
+          >
+            <div className="text-dark-text-secondary leading-relaxed space-y-4">
+              <p>
+                Hello there! I&apos;m <span className="text-dark-text font-semibold">Nafis Arinda Rizky Putra Handoko</span>,
+                a Software Engineer from Indonesia 🇮🇩
+              </p>
+              <p>
+                I specialize in building and maintaining production systems in the healthcare and ERP
+                domain. Currently working with{" "}
+                <TextLink url="https://fhir.org/">HL7 FHIR</TextLink>,{" "}
+                <TextLink url="https://www.odoo.com/">Python (Odoo)</TextLink>,{" "}
+                <TextLink url="https://lit.dev/">TypeScript (Lit/Polymer)</TextLink>, and{" "}
+                <TextLink url="https://spring.io/">Kotlin (Spring)</TextLink>.
+              </p>
+              <p>
+                Previously, I built web applications using{" "}
+                <TextLink url="https://react.dev/">React</TextLink>,{" "}
+                <TextLink url="https://nextjs.org/">Next.js</TextLink>, and{" "}
+                <TextLink url="https://tailwindcss.com/">Tailwind CSS</TextLink>. I&apos;m passionate
+                about clean architecture, great UX, and solving real problems through technology.
+              </p>
+            </div>
+
+            {/* Tech Pills */}
+            <div className="flex flex-wrap gap-2">
+              {["React", "Next.js", "TypeScript", "Tailwind", "Node.js", "Python", "Kotlin", "FHIR"].map(
+                (tech) => (
+                  <span key={tech} className="badge">
+                    {tech}
+                  </span>
+                )
+              )}
+            </div>
+          </MotionDiv>
+        </div>
+      </div>
+    </MotionSection>
+  );
 }
