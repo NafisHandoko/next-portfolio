@@ -3,15 +3,15 @@ import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 interface ButtonProps {
-  type: "button" | "a" | "Link";
+  type: "button" | "a" | "Link" | "tab";
   text: string;
   href?: string;
   onClick?: () => void;
+  className?: string;
 }
 
-export default function Button({ type, text, href, onClick }: ButtonProps) {
-  const baseClasses =
-    "inline-flex items-center gap-2 px-8 py-3 rounded-full font-medium text-sm transition-all duration-300 bg-accent-purple hover:bg-accent-purple/90 text-white shadow-lg shadow-accent-purple/25 hover:shadow-accent-purple/40 hover:-translate-y-0.5";
+export default function Button({ type, text, href, onClick, className }: ButtonProps) {
+  const baseClasses = `${className || ''} inline-flex items-center gap-2 px-8 py-3 rounded-full font-medium text-sm transition-all duration-300 bg-accent-purple hover:bg-accent-purple/90 text-white shadow-lg shadow-accent-purple/25 hover:shadow-accent-purple/40 hover:-translate-y-0.5`;
 
   if (type === "Link" && href) {
     return (
