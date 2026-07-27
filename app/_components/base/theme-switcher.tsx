@@ -1,49 +1,27 @@
-'use client';
+"use client";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
+import { HiMoon, HiSun } from "react-icons/hi2";
 
-import { useState, useEffect } from 'react';
-import { useTheme } from 'next-themes';
-import { IoMoon, IoSunny } from 'react-icons/io5';
+export default function ThemeSwitcher({ variant }: { variant?: "inverse" }) {
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  const isDark = theme === "dark";
 
-const ThemeSwitcher = ({ variant = 'default' }: { variant?: 'default' | 'inverse' }) => {
-    const [mounted, setMounted] = useState(false);
-    const { theme, setTheme } = useTheme();
-    const defaultStyle = 'text-light-nero dark:text-dark-nero border-light-nero dark:border-dark-nero hover:bg-light-nero dark:hover:bg-dark-nero hover:text-light-codgray dark:hover:text-dark-codgray'
-    const inverseStyle = 'text-dark-nero dark:text-light-nero border-dark-nero dark:border-light-nero hover:bg-dark-nero dark:hover:bg-light-nero hover:text-dark-codgray dark:hover:text-light-codgray'
-    const selectedVariantStyle = variant == 'default' ? defaultStyle : inverseStyle
+  useEffect(() => setMounted(true), []);
+  if (!mounted) return <div className="w-10 h-10" />;
 
-    useEffect(() => {
-        setMounted(true);
-    }, []);
+  const btnClass = variant === "inverse"
+    ? "text-dark-text hover:text-accent-purple"
+    : "text-dark-text-secondary hover:text-dark-text";
 
-    if (!mounted) {
-        return null;
-    }
-
-    const switchTheme = () => {
-        setTheme(theme == 'dark' ? 'light' : 'dark')
-    }
-
-    const animateSwitchTheme = () => {
-        if (!document.startViewTransition) {
-            switchTheme()
-        }
-        document.startViewTransition(switchTheme);
-    }
-
-    return (
-        <button
-            className={`w-10 h-10 flex items-center justify-center rounded-full border cursor-pointer transition-all ${selectedVariantStyle}`}
-            onClick={animateSwitchTheme}
-        >
-            {
-
-                theme == 'dark' && <IoSunny />
-            }
-            {
-                theme == 'light' && <IoMoon />
-            }
-        </button>
-    );
-};
-
-export default ThemeSwitcher;
+  return (
+    <button
+      onClick={() => setTheme(isDark ? "light" : "dark")}
+      className={`p-2 rounded-lg transition-all duration-300 hover:bg-dark-elevated ${btnClass}`}
+      aria-label="Toggle theme"
+    >
+      {isDark ? <HiSun size="20px" /> : <HiMoon size="20px" />}
+    </button>
+  );
+}
