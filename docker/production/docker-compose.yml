@@ -2,9 +2,7 @@ version: "3.9"
 name: portfolio
 services:
   nextjs:
-    build:
-      context: ../../
-      dockerfile: docker/production/Dockerfile
+    image: ghcr.io/nafishandoko/next-portfolio:latest
     container_name: next_portfolio
     restart: unless-stopped
 

@@ -3,4 +3,5 @@ set -e
 
 cd docker/production
 
-sudo docker compose up --build -d
+sudo docker compose pull
+sudo docker compose up -d
