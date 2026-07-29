@@ -17,7 +17,7 @@ export default function AboutSection() {
                 variants={fadeInTransition("right", "tween", 0.1, 1.1)}
                 className="w-full md:w-1/2 flex flex-col gap-10"
             >
-                <MotionH2 variants={textVariantTransition(0.3)} className="uppercase text-light-nero dark:text-dark-nero font-bold text-3xl">About Me - Tes</MotionH2>
+                <MotionH2 variants={textVariantTransition(0.3)} className="uppercase text-light-nero dark:text-dark-nero font-bold text-3xl">About Me</MotionH2>
                 <MotionP variants={textVariantTransition(0.4)} className="text-light-silver dark:text-dark-silver">
                     Hello there!
                     <br />
